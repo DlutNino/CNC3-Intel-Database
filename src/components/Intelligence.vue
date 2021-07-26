@@ -13,8 +13,6 @@
         <h4>{{or_remark}}</h4>
       </el-tab-pane>
     </el-tabs>
-<!--    <p>{{translation}}</p>-->
-<!--    <p>{{original}}</p>-->
   </div>
 </template>
 

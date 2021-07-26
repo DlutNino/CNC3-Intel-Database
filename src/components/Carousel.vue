@@ -1,6 +1,6 @@
 <template>
   <div class="block">
-    <el-carousel trigger="click" :height="screenwidth">
+    <el-carousel trigger="click" :height="screen_width">
       <el-carousel-item v-for="item in pictures" :key="item.id">
         <img :src="item.link" alt="" class="carousel_picture">
       </el-carousel-item>
@@ -27,7 +27,7 @@ export default {
           link: require('../assets/for_carousel/4.jpg')
         },
       ],
-      screenwidth: (document.documentElement.clientWidth * 668) / 1620 + "px",
+      screen_width: (document.documentElement.clientWidth * 668) / 1620 + "px",
     }
   },
   mounted() {
@@ -35,7 +35,7 @@ export default {
     window.onresize = () => {
       return (() => {
         if (document.documentElement.clientWidth > 960) {
-          this.screenwidth =
+          this.screen_width =
               (document.documentElement.clientWidth * 668) / 1620 + "px";
         }
       })();

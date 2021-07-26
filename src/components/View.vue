@@ -15,11 +15,6 @@ export default {
   props: {
     menu_items: Array,
   },
-  data(){
-    return {
-
-    }
-  },
 }
 </script>
 

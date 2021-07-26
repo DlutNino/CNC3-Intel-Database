@@ -2,11 +2,11 @@ import View from "../components/View";
 import Intelligence from "../components/Intelligence";
 const gdi_routes = [
     {
-        path: '/eva',
+        path: '/eva/:id',
         component: View,
         props: {
             menu_items: [
-                {index: 1, title: 'GDI InOps', dest: '/eva',
+                {index: 1, title: 'GDI InOps', dest: '/eva/inops',
                     children: [
                         {index: 1, title: '驻军', dest: 'garrisoning'},
                         {index: 2, title: '呼叫运输机', dest: 'calling_for_transport'},
@@ -22,9 +22,9 @@ const gdi_routes = [
                         {index: 12, title: '声波武器与外星侵略者', dest: 'sonic&invader'},
                         {index: 13, title: '外星人的起源及其与塔西佗的连接', dest: 'alien&tactitus'},
                     ]},
-                {index: 2, title: 'GDI新闻专线', dest: '/eva'},
-                {index: 3, title: 'GDI前线纪实', dest: '/eva'},
-                {index: 4, title: 'GDI军备，战术与系统', dest: '/eva',
+                {index: 2, title: 'GDI新闻专线', dest: '/eva/news'},
+                {index: 3, title: 'GDI前线纪实', dest: '/eva/eyewitness'},
+                {index: 4, title: 'GDI军备，战术与系统', dest: '/eva/military',
                     children: [
                         {index: 1, title: 'GDI步枪兵', dest: 'riflemen'},
                         {index: 2, title: 'GDI导弹兵小队', dest: 'missile_squad'},
@@ -36,7 +36,7 @@ const gdi_routes = [
                         {index: 8, title: '狙击小队', dest: 'sniper_team'},
                         {index: 9, title: '指挥部', dest: 'command_post'},
                         {index: 10, title: '机场', dest: 'airfield'},
-                        {index: 11, title: '奥卡战机', dest: 'orca'},
+                        {index: 11, title: '奥卡攻击机', dest: 'orca'},
                         {index: 12, title: '突击队员', dest: 'commando'},
                         {index: 13, title: '捕食者主战坦克', dest: 'predator'},
                         {index: 14, title: 'GDI基地防御建筑', dest: 'base_defense'},
@@ -47,7 +47,7 @@ const gdi_routes = [
                         {index: 19, title: '雷格：展开成为作战基地', dest: 'rig'},
                         {index: 20, title: '火鹰战机', dest: 'firehawk'},
                     ]},
-                {index: 5, title: 'GDI档案室', dest: '/eva'},
+                {index: 5, title: 'GDI档案室', dest: '/eva/archives'},
             ]
         },
         children: [
@@ -240,6 +240,79 @@ const gdi_routes = [
                     tr_source: '【战术行动战地指南：掷弹兵小队】',
                     tr_remark: '',
                     or_source: 'TacOps Field Guide: Grenadier Squad',
+                    or_remark: '',
+                },
+            },
+            {
+                path: 'command_post',
+                component: Intelligence,
+                props: {
+                    title: '指挥部 Command Post',
+                    translation: [
+                        '在所有战区，在任何天气条件下，GDI前沿基地都扮演着GDI军事行动的枢纽。',
+                        '而GDI前沿基地的心脏就是指挥部。',
+                        '战地指挥官通过指挥部与各区域的GDI资源保持联系，在指挥部中聚合情报，从而迅速对局势变化做出应对。',
+                        '大功率雷达和通讯设备让军官们能够获取来自战场的即时反馈，但请特别留意，这些设备会大量消耗你的基地电网产生的电力。',
+                    ],
+                    original: [
+                        'GDI forward bases act as the hubs for GDI operations in all Zones and weather conditions.',
+                        'The heart of any GDI forward base is the Command Post.',
+                        'From this structure field commanders can maintain contact with regional GDI resources and centralize intelligence for rapid response.',
+                        'High-powered radar and communications equipment allow officers real-time feedback from units in the field, but note that this gear will draw significant power from your base grid.',
+                    ],
+                    tr_source: '【战地手册-指挥所】',
+                    tr_remark: '',
+                    or_source: 'Field Manual - Command Structure',
+                    or_remark: '',
+                },
+            },
+            {
+                path: 'airfield',
+                component: Intelligence,
+                props: {
+                    title: '机场 Airfield',
+                    translation: [
+                        '空军部队通常用于支援特定的地面力量。',
+                        '一座模块化的GDI机场建成后，它可以无限期地维护多达四架战机。',
+                        '机场能够为奥卡攻击机提供加油、维修和装弹服务，也可以通过加装先进的科技设备对垂直起降式火鹰战机进行维护。',
+                        '机场直接控制着每架战机的一小部分工作单元，所以失去机场的支持和联络，这些战机的导航系统可能会出现故障，同时考虑到全球性的离子风暴的干扰，战机可能会失去延程飞行的能力。',
+                    ],
+                    original: [
+                        'Air assets are often dedicated to support a particular ground force.',
+                        'The modular GDI Airfield can be established to maintain up to four combat aircraft indefinitely.',
+                        'The facility is capable of refueling, repairing,and rearming Orca ground attack aircraft, but can also sustain Firehawk VTOL attack jets with the addition of advanced technical equipment.',
+                        'Airfields each directly control a small element of aircraft, so without an Airfield these craft may suffer guidance failure and the inability to maintain extended operations considering global ion storm interference.',
+                    ],
+                    tr_source: '【战地手册-前沿空军基地】',
+                    tr_remark: '',
+                    or_source: 'Field Manual - Forward Air Bases',
+                    or_remark: '',
+                },
+            },
+            {
+                path: 'orca',
+                component: Intelligence,
+                props: {
+                    title: '奥卡攻击机 Orca Attack Aircraft',
+                    translation: [
+                        '数十年以来，具有高机动性且体质轻盈的奥卡空中武器平台一直在支援着GDI的地面作战。',
+                        '当前与其它GDI军事力量一同部署在世界各地的奥卡Mk Ⅳ，是一种具有顶尖技术水平的全新战机。',
+                        '奥卡Mk Ⅳ可以垂直起降，具有微型操作终端，高巡航速度，超长射程以及长时间悬停的能力，它是一种真正的多功能武器系统。',
+                        '它挂载的空对地导弹可以对各种各样的目标实施打击，包括敌方战车和建筑物。',
+                        '奥卡Mk Ⅳ还可以装载一个传感器阵列，即使是运用最先进隐形技术的Nod单位也会被侦测到。',
+                        '战地指挥官应特别留意奥卡攻击机不具备空战能力，当在Nod兄弟会握有空中优势的地区行动时，应派遣挂载空对空导弹的火鹰战机护卫奥卡攻击机。',
+                    ],
+                    original: [
+                        'The highly maneuverable and light-weight Orca aerial weapons platform has supported GDI ground campaigns for decades.',
+                        'The Mk Ⅳ version currently deployed with GDI forces worldwide is an all-new, state-of-the art aircraft.',
+                        'With VTOL capability that allows it to operate from small pads, a high cruising speed, long range, and the ability to hover for extended periods, the Mk Ⅳ Orca is a truly versatile weapon system.',
+                        'Its air-to-ground missiles can strike a wide variety of targets including enemy vehicles and structures.',
+                        'The Mk Ⅳ can also be equipped with a sensor array capable of detecting even the most advanced Nod stealth units.',
+                        'Field commanders should note that Orcas are not capable of engaging targets in the air and should be escorted by Firehawk attack jets carrying air-to-air missiles when operating in areas where Nod commands air superiority.',
+                    ],
+                    tr_source: '【战术行动战地指南：奥卡Mk Ⅳ】',
+                    tr_remark: '',
+                    or_source: 'TacOps Field Guide: Mark Ⅳ Orca',
                     or_remark: '',
                 },
             },

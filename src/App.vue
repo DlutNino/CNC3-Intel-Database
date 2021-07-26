@@ -6,13 +6,11 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import NavigationTop from "./components/NavigationTop";
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
     NavigationTop
   }
 }
