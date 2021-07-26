@@ -153,6 +153,96 @@ const gdi_routes = [
                     or_remark: 'GDI - Units and Weapons',
                 },
             },
+            {
+                path: 'barracks',
+                component: Intelligence,
+                props: {
+                    title: '兵营 Barracks',
+                    translation: [
+                        'GDI的大本营由许多高度便携式和模块化的建筑组成。',
+                        '这使得在恶劣气候下和偏远地区中建造和拆除居所变得轻松快捷。',
+                        '在持久耐用的装甲镀层板保护下，驻扎在GDI基地的人员能够免受泰伯利亚污染和离子风暴的影响，但是如果没有兵工厂的支援，他们将无法获取先进的武器装备。',
+                    ],
+                    original: [
+                        'GDI base camps are created using highly portable，modular buildings.',
+                        'This allows for easy construction and tear-down of shelters in harsh climates and remote locations.',
+                        'Personnel stationed at GDI bases will find themselves protected from Tiberium contamination and ion storms due to the durable armor plating, but will not have access to advanced weaponry without the support of an Armory.',
+                    ],
+                    tr_source: '【战地手册-后勤保障】',
+                    tr_remark: 'GDI - 作战单位与武器',
+                    or_source: 'Field Manual - Logistics',
+                    or_remark: 'GDI - Units and Weapons',
+                },
+            },
+            {
+                path: 'apc',
+                component: Intelligence,
+                props: {
+                    title: '装甲运兵车 APC',
+                    translation: [
+                        'GDI装甲运兵车(APC)，是一种通过装甲舱室运输士兵的六轮全地形车辆。',
+                        '可调节尺寸的枪眼让车内士兵能够向车外目标开火。',
+                        '在APC中部署一队导弹兵，APC就可以发射导弹。',
+                        'APC具有多个出口，因此乘员可以迅速撤离，从而能够以最短的准备时间进入露天交火状态。',
+                    ],
+                    original: [
+                        'The GDI Armored Personnel Carrier, or APC, is a six-wheeled all-terrain vehicle that can transport infantry in an armored compartment.',
+                        'Dynamically sized fire slits permit the soldiers riding in the vehicle to shoot at targets outside the APC.',
+                        'Deploy a Missile Squad into an APC and the vehicle effectively gains the ability to fire missiles.',
+                        'Passengers can be evacuated quickly through multiple exits from the APC, so the vehicle can drop soldiers right into a firefight with minimum downtime for unloading.',
+                    ],
+                    tr_source: '【战地手册-APC】',
+                    tr_remark: 'GDI - 作战单位与武器',
+                    or_source: 'Field Manual - APC',
+                    or_remark: 'GDI - Units and Weapons',
+                },
+            },
+            {
+                path: 'sniper_team',
+                component: Intelligence,
+                props: {
+                    title: '狙击小队 Sniper Team',
+                    translation: [
+                        '狙击小队能够几乎弹无虚发地击杀敌方步兵。',
+                        '他们运用了隐形技术，在静止时不会被肉眼观测到，也不会被普通设备探测到。',
+                        '狙击小队中的观察手具有非凡的指示能力，让指挥官可以在半径数英里的范围内为神像火炮机甲指定攻击目标。',
+                        '在战场上，神像的机组人员可以观察并锁定为他们指示目标的狙击小队四周的一切敌方单位和建筑。',
+                    ],
+                    original: [
+                        'Sniper Teams are able to take down enemy infantry with deadly precision.',
+                        'They employ stealth so they can\'t be seen or detected while motionless.',
+                        'Finally, the spotter in a Sniper Team allows you to designate targets for any Juggernaut artillery unit for miles around.',
+                        'The Juggernaut crew will be able to see and target enemy units and structures anywhere near active Sniper Teams in the environment.',
+                    ],
+                    tr_source: '【战术行动战地指南：狙击小队】',
+                    tr_remark: '',
+                    or_source: 'TacOps Field Guide: Sniper Team',
+                    or_remark: '',
+                },
+            },
+            {
+                path: 'grenadier',
+                component: Intelligence,
+                props: {
+                    title: '掷弹兵 Grenadier',
+                    translation: [
+                        '如果你想迅速清扫一座驻军建筑物，只需派出一队掷弹兵，他们就可以完成这项任务。',
+                        '他们投掷的火箭助推手榴弹甚至可以打击高大建筑的顶层。',
+                        '更令人赞叹的是，手榴弹上配备了微型AI和制导系统，能够控制飞行路线，使手榴弹直接通过窗户进入建筑。',
+                        '掷弹兵能够把驻守在建筑内的敌军士兵炸飞。',
+                    ],
+                    original: [
+                        'If you need to clear a garrisoned building fast, deploy a Grenadier squad and they\'ll get the job done.',
+                        'Their rocket propelled grenades can even hit the upper stories of taller structures.',
+                        'Even better, the grenades have minimal on-board AI and guidance and steer themselves right through windows.',
+                        'Grenadiers will blow the garrisoned enemy troops right out of the side of the building.',
+                    ],
+                    tr_source: '【战术行动战地指南：掷弹兵小队】',
+                    tr_remark: '',
+                    or_source: 'TacOps Field Guide: Grenadier Squad',
+                    or_remark: '',
+                },
+            },
         ]
     }
     ];
