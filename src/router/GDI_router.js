@@ -1,0 +1,160 @@
+import View from "../components/View";
+import Intelligence from "../components/Intelligence";
+const gdi_routes = [
+    {
+        path: '/eva',
+        component: View,
+        props: {
+            menu_items: [
+                {index: 1, title: 'GDI InOps', dest: '/eva',
+                    children: [
+                        {index: 1, title: '驻军', dest: 'garrisoning'},
+                        {index: 2, title: '呼叫运输机', dest: 'calling_for_transport'},
+                        {index: 3, title: '后勤物资箱', dest: 'logistics_crates'},
+                        {index: 4, title: '液态泰伯利亚研究', dest: 'liquid_tiberium_research'},
+                        {index: 5, title: 'Nod兄弟会飞行器', dest: 'nod_aircraft'},
+                        {index: 6, title: '新式Nod喷火坦克', dest: 'flame_tank'},
+                        {index: 7, title: '征用泰伯利亚储藏柱', dest: 'tiberium_spikes'},
+                        {index: 8, title: 'EMP控制中心', dest: 'emp_centre'},
+                        {index: 9, title: '开罗的核弹发射井', dest: 'cairo_nuclear'},
+                        {index: 10, title: 'Nod兄弟会的核武器库', dest: 'nod_nuclear'},
+                        {index: 11, title: 'Nod离子炮干扰科技', dest: 'ion_cannon_disruption'},
+                        {index: 12, title: '声波武器与外星侵略者', dest: 'sonic&invader'},
+                        {index: 13, title: '外星人的起源及其与塔西佗的连接', dest: 'alien&tactitus'},
+                    ]},
+                {index: 2, title: 'GDI新闻专线', dest: '/eva'},
+                {index: 3, title: 'GDI前线纪实', dest: '/eva'},
+                {index: 4, title: 'GDI军备，战术与系统', dest: '/eva',
+                    children: [
+                        {index: 1, title: 'GDI步枪兵', dest: 'riflemen'},
+                        {index: 2, title: 'GDI导弹兵小队', dest: 'missile_squad'},
+                        {index: 3, title: 'GDI工兵', dest: 'gdi_engineer'},
+                        {index: 4, title: '机动基地车', dest: 'mcv'},
+                        {index: 5, title: '兵营', dest: 'barracks'},
+                        {index: 6, title: 'APC', dest: 'apc'},
+                        {index: 7, title: '掷弹兵', dest: 'grenadier'},
+                        {index: 8, title: '狙击小队', dest: 'sniper_team'},
+                        {index: 9, title: '指挥部', dest: 'command_post'},
+                        {index: 10, title: '机场', dest: 'airfield'},
+                        {index: 11, title: '奥卡战机', dest: 'orca'},
+                        {index: 12, title: '突击队员', dest: 'commando'},
+                        {index: 13, title: '捕食者主战坦克', dest: 'predator'},
+                        {index: 14, title: 'GDI基地防御建筑', dest: 'base_defense'},
+                        {index: 15, title: '起重机', dest: 'crane'},
+                        {index: 16, title: '战区重装兵', dest: 'zone_troopers'},
+                        {index: 17, title: '战争工厂的维修无人机', dest: 'repair_drone'},
+                        {index: 18, title: '使用勘探者进行基地扩张', dest: 'surveyor'},
+                        {index: 19, title: '雷格：展开成为作战基地', dest: 'rig'},
+                        {index: 20, title: '火鹰战机', dest: 'firehawk'},
+                    ]},
+                {index: 5, title: 'GDI档案室', dest: '/eva'},
+            ]
+        },
+        children: [
+            {
+                path: 'riflemen',
+                component: Intelligence,
+                props: {
+                    title: 'GDI步枪兵 Riflemen',
+                    translation: [
+                        '装备有GD2型步枪的GDI步枪兵，是GDI军队的中流砥柱。',
+                        '接受过反步兵作战技术训练的他们被部署在所有战区。',
+                        '步枪兵在防御建筑中时作用最为显著，当需要防守固定地点时，他们还携带了用于挖掘散兵坑的装备。',
+                        '在缺乏足够强力的重武器支援的情况下，无论如何步枪兵都不应直面敌方的重型装甲单位，特别是敌军还拥有喷火武器时。',
+                    ],
+                    original: [
+                        'Equipped with the GD2 rifle, GDI Riflemen are the mainstay of GDI military forces.',
+                        'They are deployed to all combat zones and trained in anti-infantry combat techniques.',
+                        'Riflemen are most effective when garrisoned in fortified structures, and are equipped to dig foxholes when the need arises to defend a fixed position.',
+                        'Riflemen should never be deployed against heavy armor,especially flame weapons, without significant heavy-weapon Support.',
+                    ],
+                    tr_source: '【战地手册-基础步兵】',
+                    tr_remark: 'GDI - 作战单位与武器',
+                    or_source: 'Field Manual - Basic Infantry',
+                    or_remark: 'GDI - Units and Weapons',
+                },
+            },
+            {
+                path: 'missile_squad',
+                component: Intelligence,
+                props: {
+                    title: 'GDI导弹兵小队 Missile Squad',
+                    translation: [
+                        'GDI导弹兵小队统一装备有用于最大限度毁伤战车和飞行器的FGM-90。',
+                        '像吉普车或越野车这样的轻型战车是导弹兵小队的绝佳攻击目标。',
+                        '导弹兵小队通常与规模更大的步枪兵小队联合行动，不过当他们位于民居或APC这样能为他们阻挡反步兵火力的驻军点中时，他们的作战效果相当可观。',
+                    ],
+                    original: [
+                         'GDI Missile Squads are armed with the FGM-90, which is designed to inflict maximum damage to vehicles and aircraft.',
+                         'Light vehicles like jeeps and buggies are excellent targets for Missile Squads.',
+                         'Missile Squads are normally deployed in tandem with larger Rifleman squads, but can be used to great effect from garrisoned positions in civilian buildings or APCs where they are protected from anti-infantry fire.',
+                    ],
+                    tr_source: '【战地手册-基础步兵】',
+                    tr_remark: 'GDI - 作战单位与武器',
+                    or_source: 'Field Manual - Basic Infantry',
+                    or_remark: 'GDI - Units and Weapons',
+                },
+            },
+            {
+                path: 'gdi_engineer',
+                component: Intelligence,
+                props: {
+                    title: 'GDI工兵 Engineer',
+                    translation: [
+                        'GDI战地工程师能够占领敌方建筑并修理受损的建筑（包括桥梁和基地建筑）。',
+                        '指挥官可以派遣一名工程师潜入敌方基地建筑内从而将其占据——或者令其进入一座受损的建筑进行彻底的修复。',
+                        '派遣一名工程师进入桥梁自动维修门楼内，可修缮损毁的桥梁。',
+                        '作为一名战地工程师，一些至关重要的行为准则应被永远牢记于心：',
+                        '1. 绝不在敌占区内单独行动。你身着的标准配置防弹衣在大多数现代武器面前不堪一击。',
+                        '2. 你装备有一把标准GD45型袖珍手枪，仅将其作为你别无选择时的手段，因为它无法击穿大多数现代装甲或护甲。',
+                        '3. 一旦你成功进入了敌方建筑物，一定要以最快速度使中央计算机终端停止运转，并安装你的覆盖程序，从而与距离你最近的GDI指挥部取得连接。',
+                        '4. 当你进入一座受损建筑时，确保你能够启动损害管制程序使其迅速运行完毕。在自动损管系统发挥作用后，你将会明确该如何着手于更加繁复和规模更加庞大的维修工作。',
+                        '5. 永远戴好你的安全帽。',
+                    ],
+                    original: [
+                        'GDI combat engineers are able to capture enemy buildings and repair structures (including bridges and base buildings).',
+                        'Deploy an engineer into an enemy base structure in order to capture it - or send an engineer into a damaged building to fix it back up again.',
+                        'Damaged bridges can be repaired by deploying an engineer into the bridge auto-repair gatehouses.',
+                        'As a combat engineer a few cardinal rules should be kept in mind at all times:',
+                        '1. Never act alone in hostile territory. Your standard issue body armor is ineffective against most modern weapons.',
+                        '2. You are equipped with a standard GD45 sidearm. Only use it as a last resort as it will not penetrate most modern body armor.',
+                        '3. Once you gain access to an enemy structure be sure to disable the central computer terminal immediately and install your override program to connect the structure to the nearest command post.',
+                        '4. When entering a damaged structure be sure to initiate damage control programs for immediate results. Once the automation has kicked in you will be clear to commence more extensive repairs.',
+                        '5. Keep your hard-hat on at all times.',
+                    ],
+                    tr_source: '【节选自 战地工程师教材】',
+                    tr_remark: 'GDI - 作战单位与武器',
+                    or_source: 'Engineer Combat Primer Excerpt',
+                    or_remark: 'GDI - Units and Weapons',
+                },
+            },
+            {
+                path: 'mcv',
+                component: Intelligence,
+                props: {
+                    title: '机动基地车 M.C.V.',
+                    translation: [
+                        '作为一座前沿基地的根基与核心，机动基地车（MCV）被部署在所有主要战场。',
+                        'MCV能够在一切障碍相对较少的地形上行进。',
+                        'MCV不具备任何自卫能力。',
+                        '当一辆MCV抵达它的目的地时，它可以立即迅速展开成为一座建筑工厂，能够建造生产建筑，泰伯利亚精炼厂和其它前沿基地所需要的建筑物。',
+                        '建筑工厂可以随时被收起从而回到机动的MCV形态，但我们的建议是，仅当建筑工厂所支持的基地不再使用时才将其收起。',
+                    ],
+                    original: [
+                        'Mobile Construction Vehicles, or MCVs, are deployed to all major theatres to serve as the foundation for a forward operating base.',
+                        'The MCV is capable of rolling over any relatively clear terrain.',
+                        'It\'s not equipped for self-defense.',
+                        'When an MCV reaches its destination it can immediately unpack into a construction Yard capable of building production structures, a Tiberium Refinery, and other elements needed for a forward base.',
+                        'The Construction Yard can be packed up into the MCV at any time, although it is only advised when the base it supports is no longer being used.',
+                    ],
+                    tr_source: '【战地工程师教材】',
+                    tr_remark: 'GDI - 作战单位与武器',
+                    or_source: 'Engineer Combat Primer',
+                    or_remark: 'GDI - Units and Weapons',
+                },
+            },
+        ]
+    }
+    ];
+
+export default gdi_routes;
