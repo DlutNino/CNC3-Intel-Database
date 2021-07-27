@@ -12,7 +12,7 @@
         <router-link to="/eva/index" class="router_link">E.V.A 情报中心</router-link>
       </el-menu-item>
       <el-menu-item index="2" class="el_menu_item">
-        <router-link to="/legion" class="router_link">LEGION 情报系统</router-link>
+        <router-link to="/legion/index" class="router_link">LEGION 情报系统</router-link>
       </el-menu-item>
       <el-menu-item index="3" class="el_menu_item">
         <router-link to="/kane_wrath" class="router_link">《凯恩之怒》特别情报</router-link>

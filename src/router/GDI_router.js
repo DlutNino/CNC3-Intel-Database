@@ -2,6 +2,10 @@ import View from "../components/View";
 import Intelligence from "../components/Intelligence";
 const gdi_routes = [
     {
+      path: '/eva/index',
+      redirect: '/eva/military/riflemen',
+    },
+    {
         path: '/eva/:id',
         component: View,
         props: {
@@ -11,8 +15,8 @@ const gdi_routes = [
                         {index: 1, title: '驻军', dest: 'garrisoning'},
                         {index: 2, title: '呼叫运输机', dest: 'calling_for_transport'},
                         {index: 3, title: '后勤物资箱', dest: 'logistics_crates'},
-                        {index: 4, title: '液态泰伯利亚研究', dest: 'liquid_tiberium_research'},
-                        {index: 5, title: 'Nod兄弟会飞行器', dest: 'nod_aircraft'},
+                        {index: 4, title: '液态泰伯利亚科研', dest: 'liquid_tiberium_research'},
+                        {index: 5, title: 'Nod兄弟会空军', dest: 'nod_aircraft'},
                         {index: 6, title: '新式Nod喷火坦克', dest: 'flame_tank'},
                         {index: 7, title: '征用泰伯利亚储藏柱', dest: 'tiberium_spikes'},
                         {index: 8, title: 'EMP控制中心', dest: 'emp_centre'},
@@ -39,7 +43,7 @@ const gdi_routes = [
                         {index: 11, title: '奥卡攻击机', dest: 'orca'},
                         {index: 12, title: '突击队员', dest: 'commando'},
                         {index: 13, title: '捕食者主战坦克', dest: 'predator'},
-                        {index: 14, title: 'GDI基地防御建筑', dest: 'base_defense'},
+                        {index: 14, title: 'GDI基地防御系统', dest: 'base_defense'},
                         {index: 15, title: '起重机', dest: 'crane'},
                         {index: 16, title: '战区重装兵', dest: 'zone_troopers'},
                         {index: 17, title: '战争工厂的维修无人机', dest: 'repair_drone'},
@@ -214,7 +218,7 @@ const gdi_routes = [
                         'Finally, the spotter in a Sniper Team allows you to designate targets for any Juggernaut artillery unit for miles around.',
                         'The Juggernaut crew will be able to see and target enemy units and structures anywhere near active Sniper Teams in the environment.',
                     ],
-                    tr_source: '【战术行动战地指南：狙击小队】',
+                    tr_source: '【战地指南-战术行动：狙击小队】',
                     tr_remark: '',
                     or_source: 'TacOps Field Guide: Sniper Team',
                     or_remark: '',
@@ -237,7 +241,7 @@ const gdi_routes = [
                         'Even better, the grenades have minimal on-board AI and guidance and steer themselves right through windows.',
                         'Grenadiers will blow the garrisoned enemy troops right out of the side of the building.',
                     ],
-                    tr_source: '【战术行动战地指南：掷弹兵小队】',
+                    tr_source: '【战地指南-战术行动：掷弹兵小队】',
                     tr_remark: '',
                     or_source: 'TacOps Field Guide: Grenadier Squad',
                     or_remark: '',
@@ -299,7 +303,7 @@ const gdi_routes = [
                         '当前与其它GDI军事力量一同部署在世界各地的奥卡Mk Ⅳ，是一种具有顶尖技术水平的全新战机。',
                         '奥卡Mk Ⅳ可以垂直起降，具有微型操作终端，高巡航速度，超长射程以及长时间悬停的能力，它是一种真正的多功能武器系统。',
                         '它挂载的空对地导弹可以对各种各样的目标实施打击，包括敌方战车和建筑物。',
-                        '奥卡Mk Ⅳ还可以装载一个传感器阵列，即使是运用最先进隐形技术的Nod单位也会被侦测到。',
+                        '奥卡Mk Ⅳ还可以装载一个传感器阵列，即使是运用最先进隐形技术的Nod单位也无处遁形。',
                         '战地指挥官应特别留意奥卡攻击机不具备空战能力，当在Nod兄弟会握有空中优势的地区行动时，应派遣挂载空对空导弹的火鹰战机护卫奥卡攻击机。',
                     ],
                     original: [
@@ -310,9 +314,127 @@ const gdi_routes = [
                         'The Mk Ⅳ can also be equipped with a sensor array capable of detecting even the most advanced Nod stealth units.',
                         'Field commanders should note that Orcas are not capable of engaging targets in the air and should be escorted by Firehawk attack jets carrying air-to-air missiles when operating in areas where Nod commands air superiority.',
                     ],
-                    tr_source: '【战术行动战地指南：奥卡Mk Ⅳ】',
+                    tr_source: '【战地指南-战术行动：奥卡Mk Ⅳ】',
                     tr_remark: '',
                     or_source: 'TacOps Field Guide: Mark Ⅳ Orca',
+                    or_remark: '',
+                },
+            },
+            {
+                path: 'commando',
+                component: Intelligence,
+                props: {
+                    title: '突击队员 Commando',
+                    translation: [
+                        'GDI军备中最致命的武器并非一辆坦克或一架战机，而是一位血肉之躯的战士。',
+                        'GDI的精英突击队员真正意义上诠释了“一个人就是一支军队”，GDI突击队经历了长达50年的底蕴积累和薪火相传，队员们都经历了艰苦卓绝的训练，训练项目的人身事故率高达22%，而且有多达97%的幸存者无法坚持下去而中途退出（即使被挑选接受训练的已经是各个服务部门中最优秀的佼佼者）。',
+                        '突击队员全副武装，身披特制的作战护甲，腿绑固态燃料驱动的喷气式跳跃机，手持一把属于高级机密的高射速轨道炮，腰挂数包足以摧毁一整栋大楼的不可思议的新型炸药。',
+                        'GDI的武器实验室用它们所研发的各种GDI未来武器的原型机武装这些突击队员，因此在战场上再无他人拥有突击队员的装备。',
+                        '最精锐的突击队员还接受了使用炸药引爆大型机甲腿部从而使其瘫痪的训练，而这也是GDI退役了许多在第二次泰伯利亚战争中作为GDI军队中流砥柱的双足机甲的原因之一（鉴于步行机甲的这个弱点似乎同样可以被Nod兄弟会的精英部队所利用）。',
+                    ],
+                    original: [
+                        'The deadliest weapon in the GDI arsenal isn\'t a tank or an aircraft - it\'s a human being.',
+                        'GDI\'s elite Commando is truly an "army of one", backed by 50 years of tradition and trained in a grueling program that has a 22% fatality rate and a 97% drop-out rate for the survivors (even after starting with the very best of the best in all branches of service).',
+                        'Commandos are equipped with special battle armor， solid fuel jump jets, a top secret rail gun with a high rate of fire, and det-packs that can take down an entire building with an exotic new explosive.',
+                        'GDI weapons labs equip Commandos with the prototypes of GDI\'s next-gen weapons, so nobody else on the battlefield has the toys these boys have.',
+                        'The most elite Commandos are also trained to use their det-packs on the legs of large walkers, one of the reasons that GDI retired many of the bipedal walkers that were a mainstay in the second Tiberium War (given that this new vulnerability seemed like it could be exploited by Nod elite units as well).',
+                    ],
+                    tr_source: '【战地指南-战术行动：突击队员】',
+                    tr_remark: '',
+                    or_source: 'TacOps Field Guide: Commando',
+                    or_remark: '',
+                },
+            },
+            {
+                path: 'predator',
+                component: Intelligence,
+                props: {
+                    title: '捕食者主战坦克 Predator Battle Tank',
+                    translation: [
+                        '65吨级的捕食者坦克主炮口径为150毫米，可以使用穿甲弹痛击任何战车或建筑。',
+                        '以大型装甲车的标准审视，它的速度、机动性和操纵性堪称上乘。',
+                        '当集群作战的捕食者坦克取得压倒性的数量优势时，它们能够迅速冲破敌军的防御阵线，将敌军步兵直接碾碎在履带之下。',
+                        '它们的装甲性能令人赞叹，但是在直面穿甲火箭弹和大口径火炮的攻击时，依然显得无能为力。',
+                    ],
+                    original: [
+                        'Equipped with a 150mm cannon, this 65 ton tank packs an armor-piercing punch against any vehicle or structure.',
+                        'It\'s also fast and quite maneuverable for a large armored vehicle.',
+                        'Devastating in numbers, Predator tanks can rip through enemy encampments quickly, as well as crush infantry under their tracks.',
+                        'They have excellent armor, but are vulnerable to armor-piercing rocket and cannon attacks.',
+                    ],
+                    tr_source: '【2047世界兵器：GDI主战坦克 MBT-6捕食者】',
+                    tr_remark: '',
+                    or_source: 'Weapons of the World 2047: GDI Main Battle Tank - MBT-6 Predator',
+                    or_remark: '',
+                },
+            },
+            {
+                path: 'base_defense',
+                component: Intelligence,
+                props: {
+                    title: 'GDI基地防御系统 GDI Base Defenses',
+                    translation: [
+                        'GDI拥有三种用于驱逐敌军的基础基地防御建筑：警戒塔、守护者重炮和防空炮。',
+                        '警戒塔高达30英尺，顶端安装有双联装20毫米轨道机炮。' +
+                        '这种反步兵防御塔使用红外光谱成像系统和新一代传感器侦测隐形单位，足以将敌军步兵撕成碎片。' +
+                        '它的设计精密而巧妙，可以自动对任何进入它最大射程范围的地面单位开火，可以自动区分步兵和坦克并优先解决步兵，从而最大限度地发挥其杀伤性弹药的威力，扬长避短。',
+                        '守护者重炮的口径为105毫米，足以穿透重型坦克的装甲。' +
+                        '它是一种针对战车的武器，面对步兵时效果欠佳。',
+                        '防空炮是一种双联装30毫米加特林机炮，对空中目标发射贫铀弹。' +
+                        '它拥有精准度拔群的火控系统和惊人的射速，面对任何种类的飞行器时都游刃有余。',
+
+                    ],
+                    original: [
+                        'GDI has 3 basic base defenses with which to ward off enemy attacks: The Watchtower, the Guardian Cannon, and the AA Battery.',
+                        'The Watchtower stands 30ft tall with twin 20mm railguns mounted atop it.',
+                        'Equipped with an IR spotlight and next-gen sensor to detect stealthed units, this anti-infantry defense tears enemy infantry to shreds.' +
+                        'Programmed to attack any ground unit that comes within its range, the Watchtower is also able to distinguish between infantry and tanks, and will prioritize the infantry over tanks so as to maximize the lethality of its anti-personnel ammunition.',
+                        'The Guardian Cannon is equipped with a 105mm gun capable of ripping through the heavy armor of tanks.',
+                        'The Guardian is an anti-vehicle weapon and is not as effective against infantry.',
+                        'The Anti-Air Battery has twin 30mm Gatling guns firing depleted Uranium shells at air targets.',
+                        'With a deadly accurate fire control system and a staggering rate of fire, the AA Battery is very effective against any form of aircraft.',
+                    ],
+                    tr_source: '【节选自 技术手册(2047)】',
+                    tr_remark: '',
+                    or_source: 'Excerpt Technical Manual 2047',
+                    or_remark: '',
+                },
+            },
+            {
+                path: 'crane',
+                component: Intelligence,
+                props: {
+                    title: '起重机 Crane',
+                    translation: [
+                        '如果一座前沿基地需要快速成型或扩展，请考虑建造一座起重机，为建筑工厂增加一条新的生产线。' +
+                        '纳米组装器、计算机和控制单元可以同时工作于两座基地建筑。',
+                    ],
+                    original: [
+                        'If a forward base needs to go up fast, consider building a Crane to open up a second production queue at the Construction Yard.',
+                        'The nano-assemblers, computers, and control units will be able to work on two base structures simultaneously.',
+                    ],
+                    tr_source: '【战地指南-基地后勤保障】',
+                    tr_remark: '',
+                    or_source: 'Base Logistics Field Guide',
+                    or_remark: '',
+                },
+            },
+            {
+                path: 'zone_troopers',
+                component: Intelligence,
+                props: {
+                    title: '战区重装兵 Zone Troopers',
+                    translation: [
+                        '战区重装兵是GDI的精锐重型步兵，具有卓越的机动性、护甲和强盛的火力，能够独力消灭敌军的步兵和轻型战车等目标。',
+                        '战区重装兵身披动力装甲，手持轨道炮，腿绑能帮助他们翻越障碍或横跨河流的喷气式跳跃机，是GDI各种常规步兵中肩扛重担的老大哥。',
+                    ],
+                    original: [
+                        'GDI Zone Troopers are elite heavy infantry with exceptional mobility, armor, and enough firepower to take out enemy targets ranging from infantry to light vehicles.',
+                        'Equipped with power armor, rail guns, and jump jets that can boost them over obstacles or across rivers, Zone Troopers do the heavy lifting for the GDI Infantry.',
+                    ],
+                    tr_source: '【战地指南-战术行动：战区重装兵】',
+                    tr_remark: '',
+                    or_source: 'TacOps Field Guide: Zone Troopers',
                     or_remark: '',
                 },
             },
