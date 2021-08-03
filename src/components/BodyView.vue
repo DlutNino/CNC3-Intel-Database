@@ -8,7 +8,7 @@
 <script>
 import NavigationAside from "./NavigationAside";
 export default {
-  name: "View",
+  name: "BodyView",
   components: {
     NavigationAside
   },

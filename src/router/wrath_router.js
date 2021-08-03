@@ -1,8 +1,8 @@
-import View from "../components/View";
+import BodyView from "../components/BodyView";
 const wrath_routes = [
     {
         path: '/kane_wrath',
-        component: View,
+        component: BodyView,
     },
 ];
 

@@ -1,8 +1,8 @@
-import View from "../components/View";
+import BodyView from "../components/BodyView";
 const nod_routes = [
     {
         path: '/legion/:id',
-        component: View,
+        component: BodyView,
         props: {
             menu_items: [
                 {index: 1, title: 'Nod兄弟会战地情报', dest: '/legion/field_intel'},
