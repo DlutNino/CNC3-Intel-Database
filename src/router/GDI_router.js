@@ -1,7 +1,7 @@
 import BodyView from "../components/BodyView";
 import weapon_tactic_system from "@/router/GDI_intel/GDI_Weapon_Tactic_System";
 import inops from "@/router/GDI_intel/GDI_InOps";
-import eyewitness_accounts from "@/router/GDI_intel/GDI_Eyewitness";
+import eyewitness_accounts from "@/router/GDI_intel/GDI_Eyewitness_Accounts";
 import archives from "@/router/GDI_intel/GDI_Archives";
 import news_wire from "@/router/GDI_intel/GDI_NewsWire";
 
@@ -32,7 +32,14 @@ const gdi_routes = [
                         {index: 13, title: '声波武器与外星侵略者', dest: 'sonic_n_invader'},
                         {index: 14, title: '外星人：起源及其与塔西佗的联系', dest: 'alien_n_tacitus'},
                     ]},
-                {index: 2, title: 'GDI新闻专线', dest: '/eva/news'},
+                {index: 2, title: 'GDI新闻专线', dest: '/eva/news',
+                    children: [
+                        {index: 1, title: '机器中的幽灵', dest: 'ghost_machine'},
+                        {index: 2, title: '猛犸 MkⅡ步行机甲退役', dest: 'mammoth_mk2_off'},
+                        {index: 3, title: '几乎令GDI终结的致命失误', dest: 'blunder_gdi'},
+                        {index: 4, title: '东欧的魅力令凯恩迷恋', dest: 'kane_fascination'},
+                        {index: 5, title: 'GDI的避风塘', dest: 'storm_shelter'},
+                    ]},
                 {index: 3, title: 'GDI前线纪实', dest: '/eva/eyewitness',
                     children: [
                         {index: 1, title: 'Nod兄弟会：隐形科技', dest: 'stealth_tech'},
