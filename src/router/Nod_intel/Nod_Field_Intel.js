@@ -61,6 +61,58 @@ const field_intel = [
             pic_src: require('../../assets/nod_pictures/Nod_Refinery.png'),
         },
     },
+    {
+        path: 'guns_of_amazon',
+        component: Intelligence,
+        props: {
+            title: '亚马孙腹地的炮台 The Guns of the Amazon',
+            translation: [
+                '发报源：毒蛇巢穴',
+                '紧急级别：君主',
+                '扰码指数：Q-R-1',
+                '从亚马孙沙漠中转移的车队的撤退路线被GDI的远程炮兵阵地所破坏。' +
+                '在收到进一步指示之前，名为“沙漠之蝰”、“锐蝮蛇”和“巨蝮蛇”的车队将在E、S和B标记点停留等待。' +
+                '护卫队将在每个车队周围布置一道防御阵线。',
+                '当GDI的炮兵阵地被摧毁时，毒蛇巢穴将发出通知。',
+            ],
+            original: [
+                'Source: Viper\'s Nest Actual',
+                'Priority: Monarch',
+                'Scramble Index: Quebec-Romeo-1',
+                'Evacuation routes for convoys in transit from the Amazon Desert have been compromised by long range GDI artillery emplacements. ' +
+                'Convoys designated as Sand Viper, Lancehead, and Bushmaster will hold at markers Echo, Sierra, and Bravo until further notice. ' +
+                'Escorts will set up a defensive perimeter around each convoy.',
+                'Viper\'s Nest Actual will advise when the GDI emplacements have been neutralized.',
+            ],
+            tr_source: '【通讯建立】',
+            tr_remark: '通讯完毕',
+            or_source: '<<Incoming Transmission>>',
+            or_remark: '<<Transmission Offline>>',
+            pic_src: require('../../assets/nod_pictures/Guns_of_the_Amazon.png'),
+        },
+    },
+    {
+        path: 'transport',
+        component: Intelligence,
+        props: {
+            title: '呼叫运输空艇 Calling for Transport',
+            translation: [
+                '只要一座Nod基地中有可以执行任务的飞行器，处于飞行器活动半径范围内的Nod地面单位就可以呼叫运输空艇。',
+                '身处野外的作战单位可以通过无线电通讯请求将其从当前位置进行空运。',
+                '运输空艇将会降落到指定位置，接载需要转移的作战单位，并将其运送至目的地。',
+                '请小心，不要让运输空艇直接暴露在敌方的防空火力之下，因为此时的运输空艇完全是活靶子，你将要面对失去所运输的步兵或战车的风险。',
+            ],
+            original: [
+                'Once aircraft have begun operating from a Nod base, many Nod ground units in the general area gain the ability to call for transport. ',
+                'Units can radio in from the field requesting airlift from their current position. ',
+                'Carryalls will deploy, pick up the units needing transportation, and ferry them to a target destination. ',
+                'Be careful about exposing the Carryalls to enemy anti-aircraft fire because Carryalls are vulnerable targets and you run the risk of losing your infantry or vehicles in transit.',
+            ],
+            tr_source: '【摘自 兄弟会作战行动手册】',
+            or_source: 'From the Brotherhood Combat Operations Manual',
+            pic_src: require('../../assets/nod_pictures/Carryall.png'),
+        },
+    },
 ];
 
 export default field_intel;

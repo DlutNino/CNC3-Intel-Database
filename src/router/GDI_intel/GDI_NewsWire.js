@@ -87,7 +87,7 @@ const news_wire = [
         path: 'kane_fascination',
         component: Intelligence,
         props: {
-            title: '东欧的魅力令凯恩迷恋<br/> Kane\'s Fascination with Eastern Europe',
+            title: '东欧的魅力令凯恩迷恋不已<br/> Kane\'s Fascination with Eastern Europe',
             translation: [
                 '“......为何凯恩对于重建东欧的计划如此执着？' +
                 '他对萨拉热窝的迷恋究竟源于何物？' +

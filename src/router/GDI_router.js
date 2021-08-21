@@ -37,7 +37,7 @@ const gdi_routes = [
                         {index: 1, title: '机器中的幽灵', dest: 'ghost_machine'},
                         {index: 2, title: '猛犸 MkⅡ步行机甲退役', dest: 'mammoth_mk2_off'},
                         {index: 3, title: '几乎令GDI终结的致命失误', dest: 'blunder_gdi'},
-                        {index: 4, title: '东欧的魅力令凯恩迷恋', dest: 'kane_fascination'},
+                        {index: 4, title: '东欧的魅力令凯恩迷恋不已', dest: 'kane_fascination'},
                         {index: 5, title: 'GDI的避风塘', dest: 'storm_shelter'},
                     ]},
                 {index: 3, title: 'GDI前线纪实', dest: '/eva/eyewitness',

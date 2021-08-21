@@ -18,6 +18,8 @@ const nod_routes = [
                         {index: 1, title: '泰伯利亚采炼柱', dest: 'tiberium_spikes'},
                         {index: 2, title: 'Nod战术条令', dest: 'tactical_doctrine'},
                         {index: 3, title: '精炼与收割作业', dest: 'refinery_harvesting'},
+                        {index: 4, title: '亚马孙腹地的炮台', dest: 'guns_of_amazon'},
+                        {index: 5, title: '呼叫运输空艇', dest: 'transport'},
                     ]},
                 {index: 2, title: '凯恩的兵工厂', dest: '/legion/arsenal',
                     children: [
@@ -30,6 +32,11 @@ const nod_routes = [
                         {index: 7, title: '毒液巡逻空艇', dest: 'venom'},
                         {index: 8, title: '喷火兵器', dest: 'flame_weapons'},
                         {index: 9, title: '基地防御工事', dest: 'base_defenses'},
+                        {index: 10, title: '隐形塔', dest: 'disruption_tower'},
+                        {index: 11, title: '眩晕轰炸机', dest: 'vertigo_bomber'},
+                        {index: 12, title: '隐形坦克', dest: 'stealth_tank'},
+                        {index: 13, title: '光明石碑', dest: 'obelisk_of_light'},
+                        {index: 14, title: '圣灵', dest: 'avatar'},
                     ]},
                 {index: 3, title: 'Nod兄弟会档案馆', dest: '/legion/archives',
                     children: [

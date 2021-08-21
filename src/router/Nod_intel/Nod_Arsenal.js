@@ -218,6 +218,132 @@ const kane_arsenal = [
         },
     },
     {
+        path: 'disruption_tower',
+        component: Intelligence,
+        props: {
+            title: '隐形塔 Disruption Tower',
+            translation: [
+                'GDI在外太空的主导地位给我们制造了许多难题。' +
+                '他们利用天基武器和探测器平台对抗我军，令我们深感困扰。',
+                '我们的主要反制手段是我们的隐形科技，近来我们开始在重要目标周围建立隐形塔。' +
+                '隐形塔在其周围区域制造了一个隐形场，让我们的战车和建筑在活动时可以规避侦测。' +
+                '隐形塔本身是可以被观测到的，因此必须采取适当的安全措施，防止其遭受袭击。',
+                '我们在偏远地区建造了一些无实际功能的隐形塔，借此干扰敌军的情报收集工作。',
+            ],
+            original: [
+                'GDI\'s dominance of space has complicated our lives. ' +
+                'Their ability to leverage their space-based weapon and sensor platforms against us is a serious concern. ',
+                'Our primary countermeasure is our stealth technology, and recently we have begun deploying Disruption Towers around valuable assets. ' +
+                'The Disruption Tower creates a large stealth bubble over an area, allowing our vehicles and structures to operate undetected. ' +
+                'The tower itself is still visible, so be sure to utilize proper security measures to prevent direct assault. ',
+                'Dummy Disruption Towers have been erected in remote locations to foil human-intelligence gathering efforts.',
+            ],
+            tr_source: '【摘自 《战火洗礼》】',
+            or_source: 'From "Rites of War"',
+            pic_src: require('../../assets/nod_pictures/Disruption_Tower.png'),
+        },
+    },
+    {
+        path: 'vertigo_bomber',
+        component: Intelligence,
+        props: {
+            title: '眩晕轰炸机 Vertigo Bomber',
+            translation: [
+                '“......这种蝙蝠翼型隐形轰炸机采用了最新的视觉和雷达隐形技术。' +
+                '然而，当飞机投掷威力巨大的炸弹时必须解除隐形状态，此时的眩晕轰炸机将无比脆弱，不过只要武器脱离其攻击状态，隐形场会迅速重新生成......”',
+            ],
+            original: [
+                '"...this batwing stealth bomber employs the very latest in optical and radar stealth technology. ' +
+                'However, the aircraft will experience a moment of vulnerability when it must \'de-cloak\' to drop its massively powerful bomb, but as soon as the air-to-ground weapon is away, the stealth field can be reengaged quickly..."',
+            ],
+            tr_source: '【摘自 《兄弟会兵器》】',
+            or_source: 'From "Weapons of the Brotherhood"',
+            pic_src: require('../../assets/nod_pictures/Vertigo.jpg'),
+        },
+    },
+    {
+        path: 'stealth_tank',
+        component: Intelligence,
+        props: {
+            title: '隐形坦克 Stealth Tank',
+            translation: [
+                '“......新式隐形坦克速度迅捷，机动灵活，攻击力致命。' +
+                '这种多功能武器系统装备有打击战车和建筑物时均效果卓越的导弹发射器，在指挥官发动进攻，对敌人形成压制，并且能以最优方式利用隐形发生器时，其作战效果最佳。' +
+                '以灵活、机巧的方式使用隐形坦克可以提升其存活率和作战效率——在向毫无戒备的目标发射导弹之前，车组人员必须获取坦克与目标间的准确距离，以及在开火后脱离现场所需的时间。' +
+                '在坦克安全离开目标区域，隐形场重新生成之后，导弹发射器就可以进行重新装填，为坦克的下一次攻击做准备......”',
+            ],
+            original: [
+                '"...the new Stealth Tank is fast, maneuverable, and deadly. ' +
+                'Equipped with missile launchers that are effective against both vehicles and structures, this versatile weapon system is most useful when commanders are aggressive, taking the fight to the enemy and making maximum use of the stealth generators. ' +
+                'A deft touch will enhance the survivability and effectiveness of the Stealth Tank - tank crews should know exactly how close to get before unleashing missiles at an unsuspecting target and how quickly they must leave the scene after firing. ' +
+                'Once the stealth bubble has reformed and the tank is safely away from the target zone, the missile launchers can be re-armed and the tank made ready for another strike..."',
+            ],
+            tr_source: '【摘自 《兄弟会兵器》】',
+            or_source: 'From "Weapons of the Brotherhood"',
+            pic_src: require('../../assets/nod_pictures/StealthTank2047.jpg'),
+        },
+    },
+    {
+        path: 'obelisk_of_light',
+        component: Intelligence,
+        props: {
+            title: '光明石碑 Obelisk of Light',
+            translation: [
+                '......Nod部队正在沿各前线阵地修建它们标志性的光明石碑的新一代成品。' +
+                '在加装了额外的串行通道电容器之后，光明石碑的功能似乎也得到了进一步提升。' +
+                '尽管新一代设计的建筑结构与其前作并没有明显差异，但激光武器的核心得到了强化，输出功率有所下降，但输出的持续时间延长。' +
+                '显然，光明石碑现在可以被设置为扫射模式，用于打击像步兵和民用车辆这样不具备装甲的目标。' +
+                '在这种模式下，激光以有限的功率进行弧状扫射，产生切割运动，每次开火都可以击中成群的步兵。',
+                '改进后的电容器允许Nod的远程火炮平台光束炮对光明石碑进行过载充能。' +
+                '当一台或多台光束炮将它们的激光武器聚焦在碑底的接收器上时，石碑会将接收到的能量直接传入其镜像阵列，其射程随之增加。' +
+                '镜像阵列的瞄准能力有待提升，这也表明战机依然是战场上的光明石碑的最大克星......',
+            ],
+            original: [
+                '...Nod forces are deploying a new generation of their iconic Obelisk of Light along front-line positions. ' +
+                'It appears that the Obelisk\'s functionality has been improved with additional serial-channel capacitors. ' +
+                'Although the basic architecture of the design does not deviate greatly from earlier generations, the core of the laser weapon has been enhanced for increased firing duration when the power output is reduced. ' +
+                'Evidently the tower can now be set to sustained-fire mode when used against unarmored targets such as infantry and civilian vehicles. ' +
+                'This allows the laser to fire at limited power in an arc, resulting in a cutting motion that can strike several infantry per emission.',
+                'The advanced capacitor also allows over-charging of the tower by Nod\'s long-range artillery platform, the Beam Cannon. ' +
+                'When one or more Beam Cannons focus their laser weapons at a receptor on the base of the tower it can fire over increased range by directly feeding the added energy into its mirror array. ' +
+                'The limited targeting ability of the mirror array still suggests aircraft as the optimal answer for any Obelisks encountered on the field...',
+            ],
+            tr_source: '【截获GDI通讯】',
+            tr_remark: '通讯源：GDI情报部门侦察队',
+            or_source: '<<Intercepted GDI Transmission>>',
+            or_remark: 'Source: GDI InOps Recon Team ',
+            pic_src: require('../../assets/nod_pictures/Obelisk_of_Light.png'),
+        },
+    },
+    {
+        path: 'avatar',
+        component: Intelligence,
+        props: {
+            title: '圣灵 Avatar',
+            translation: [
+                '您所驾驶的是Nod兵工厂中外形最震慑人心、能力最出类拔萃的武器系统之一，这是您的福分。' +
+                '您指挥着一架高达10米的双足战斗步行机甲，一台全地形的战争机器，它的外观令人胆寒，他在战场上的出现为GDI的部队带来了无限的恐惧。',
+                '圣灵机甲所配备的基础激光武器在打击战车和建筑时效果斐然，经过升级后，圣灵机甲还可以释放出更强大的战斗力。' +
+                'Nod工程师为圣灵开发了一个独一无二的功能：它可以将其它Nod战车的关键系统拆解下来，据为己有。' +
+                '您可以拆下隐形坦克的隐形发生器，突击摩托的隐形探测器，喷火坦克的反步兵火焰喷射器，或是光束炮的主炮，然后立即将这些武器为自己所用。' +
+                '一架圣灵可以为自己加装所有四种辅助系统。' +
+                '尽管在重装新系统的过程中，圣灵会摧毁被拆解的战车并杀死其车组人员，但死者非常明白他们是为了兄弟会而捐躯的，因此他们死而无憾。',
+            ],
+            original: [
+                'You have the privilege of piloting one of the most fearsome and capable weapon systems in the arsenal of the Brotherhood. ' +
+                'You command a bipedal combat walker that stands ten meters tall, an all-terrain war machine so intimidating that its very presence on the battlefield strikes fear into the hearts of GDI troops.',
+                'The base laser weapon on the Avatar is very effective against vehicles and structures, but the Avatar can be upgraded with significantly more combat power. ' +
+                'Nod engineers have built a unique capability into the Avatar: It can adapt key systems from other Nod vehicles for its own use. ' +
+                'You can remove the stealth generator from a Stealth Tank, the stealth detector from an Attack Bike, the anti-infantry flame-thrower from a Flame Tank, or the beam cannon from an artillery vehicle and use them immediately. ' +
+                'An Avatar can equip itself with all four secondary systems. ' +
+                'Although the Avatar destroys the donor vehicle and kills the crew in the process of recovering the new system, rest easy in the knowledge that the dead have given their lives for the Brotherhood.',
+            ],
+            tr_source: '【节选自 致圣灵机组人员的简报】',
+            or_source: 'Excerpt from Avatar Crew Briefing',
+            pic_src: require('../../assets/nod_pictures/AvatarWarmech.jpg'),
+        },
+    },
+    {
         path: '',
         component: Intelligence,
         props: {
@@ -232,6 +358,7 @@ const kane_arsenal = [
             tr_remark: '',
             or_source: '',
             or_remark: '',
+            pic_src: require('../../assets/nod_pictures/Vertigo.jpg'),
         },
     },
 ];
