@@ -5,15 +5,15 @@ const inops = [
         path: 'garrisoning',
         component: Intelligence,
         props: {
-            title: '驻军 Garrisoning',
+            title: '驻守 Garrisoning',
             translation: [
-                '在城市中作战是一项棘手且危险的任务。' +
-                '在城市环境下作战时，战地指挥官应尽一切可能减少部队伤亡。',
-                '派遣步兵进驻民用建筑物是一种一举多得的战术，既可显著增强前线的防御力量，又能一定程度上保障士兵的人身安全。' +
-                '建筑物可以为步兵提供隐蔽和火力点，步兵射击建筑外的敌军时不会直接暴露于敌方火力之中。' +
-                '驻军后的建筑物可以保护士兵免受装载于战车上的重型杀伤性武器的攻击。',
+                '城市战令人感到棘手，而且充满危险。' +
+                '在城市中作战时，战地指挥官应想尽一切办法减少部队伤亡。',
+                '派遣步兵进驻民用建筑物是一种一举多得的战术，既可显著增强前线的防御力量，又能在一定程度上保障士兵的人身安全。' +
+                '建筑物可以为步兵提供隐蔽和开火基座，步兵在射击建筑外的敌军时不会直接暴露于敌方火力之中。' +
+                '驻军后的建筑物可以保护士兵免受车载重型杀伤性武器的攻击。',
                 '尽管如此，战地指挥官仍然要当心那些专门用于清扫建筑内驻军的敌方单位，特别是装备有手榴弹和火焰喷射器的单位。',
-                '谨记：在露天战场中陷入敌军的交叉火力网了吗？请命令你的士兵进驻一座建筑。',
+                '谨记：在露天战场中陷入了敌军的交叉火力网？请命令你的士兵进驻一座建筑。',
             ],
             original: [
                 'Urban combat is a messy and dangerous business.',
@@ -24,8 +24,9 @@ const inops = [
                 'That being said, field commanders should be wary of enemy units that specialize in clearing garrisoned buildings, particularly those equipped with grenades and flamethrowers.',
                 'Remember: Caught in the cross-fire while you\'re out in the open? Order your troops into a building.',
             ],
-            tr_source: '【派遣步兵驻守建筑物】',
+            tr_source: '派遣步兵驻守建筑物',
             or_source: 'Garrisoning Structures with Infantry',
+            pic_src: require('../../assets/gdi_pictures/IDB_GDI.png'),
         },
     },
     {
@@ -35,9 +36,9 @@ const inops = [
             title: '呼叫运输机 Calling for Transport',
             translation: [
                 '在前沿基地拥有一座机场之后，一些GDI步兵和战车就可以几乎随时随地呼叫运输机。' +
-                '作战单位可以在战场上通过无线电联络运输机，一架垂直起降式V-35 “公牛”运输机将飞往该作战单位所在地点，运用它的推力矢量发动机降落并接载该作战单位。',
-                '作战单位把目的地告知公牛的机组人员后，运输机会将其运送到位并降落在目标地点。',
-                '请特别留意公牛运输机和它运载的单位在空中飞行时极度脆弱————无论遭遇哪种类型的防空单位，公牛都会成为任人宰杀的活靶子。',
+                '作战单位可以在战场上通过无线电联络运输机，一架垂直起降式V-35 “公牛”运输机将飞往该作战单位所在地点，运用它的推力矢量发动机降落，然后接载该作战单位。',
+                '作战单位把目的地告知公牛的机组人员后，运输机会飞往目的地，并在那里降落。',
+                '请特别留意，公牛运输机和它运载的单位在空中飞行时极度脆弱————无论遭遇哪种类型的防空单位，公牛都会成为任人宰杀的活靶子。',
             ],
             original: [
                 'Once a forward base has an Airfield, many GDI infantry and vehicles gain the ability to call for transport at almost anytime.',
@@ -45,7 +46,7 @@ const inops = [
                 'Once a destination is communicated to the Ox crew, the aircraft will ferry the airlifted unit to its destination and set it down on target.',
                 'Keep in mind that units are extremely vulnerable while in the air - an Ox is a juicy target for an enemy unit that has any form of anti-air capability.',
             ],
-            tr_source: '【空运步兵与战车】',
+            tr_source: '空运步兵与战车',
             or_source: 'Airlift for Infantry and Vehicles',
             pic_src: require('../../assets/gdi_pictures/Ox_tran_concept.jpg'),
         },
@@ -57,11 +58,11 @@ const inops = [
             title: '后勤物资箱：充满机遇的目标<br/> Logistics Crates: Targets of Opportunity',
             translation: [
                 'GDI和Nod都把出色的机动性和迅速的部署视为制胜之道。' +
-                '部队似乎总是会来回进行转移以保持兵力分配的平衡，而且经常要急行军。' +
-                '鉴于许多命令和行动是在仓促匆忙中被执行的，大量的辎重被抛在队伍后面是司空见惯的事情。',
-                '现如今，装满备用军需品，核心数据以及其它军械和补给品的后勤物资箱在我们的蓝区和黄区已是随处可见。',
+                '部队似乎总是要不停地转移，以保持兵力分配的平衡，而且经常要急行军。' +
+                '鉴于许多行动是在仓促匆忙中执行的，大量的辎重被抛在队伍后面是司空见惯的事情。',
+                '现如今，在黄区和蓝区随处可见装满备用军需品，核心数据以及其它军械和补给品的后勤物资箱。',
                 'GDI和Nod都采用模块化的G-771G型集装箱，这种集装箱的设计标准已被商业航运界沿用数十年。',
-                '无论身居何地，你都能发现这些集装箱————而且对我们身处野外的士兵而言，它们是充满机遇的目标。' +
+                '无论身处何地，你都能发现这些集装箱————而且对我们风餐露宿的士兵而言，它们是充满机遇的目标。' +
                 '只要打开一个集装箱，他们就很有可能获得一些能派上用场的物品。',
                 'G-771G型集装箱极易被发现：只需寻找装饰有斜条纹的灰色几何体箱子即可。' +
                 '它们在视野中非常引人注目，而且任何人都可以毫不费力地打开。',
@@ -77,10 +78,9 @@ const inops = [
                 'If your troops crack one of these containers open, odds are they\'ll find something useful.',
                 'G-771G containers are easy to spot: just look for geometric gray crates trimmed with diagonal stripes.',
                 'They stick out like a sore thumb and anyone can pop them open with a bit of elbow grease.',
-                '\n',
                 'Good Hunting.',
             ],
-            tr_source: '【后勤军士长布洛克-利特福德的备忘录】',
+            tr_source: '后勤军士长布洛克-利特福德的备忘录',
             or_source: 'Memo from Supply Sergeant Brock Littleford',
             pic_src: require('../../assets/gdi_pictures/Crate.png'),
         },
@@ -91,13 +91,13 @@ const inops = [
         props: {
             title: '液态泰伯利亚科研 Liquid Tiberium Research',
             translation: [
-                '近日，一支位于北非的GDI突击队突袭了一处原本被认为是化学武器工厂的Nod研究设施，却意外地发现这是一个先进的Nod泰伯利亚武器科研项目。' +
-                '随后，科学部门对设施残骸的评估证实了，几项大规模的泰伯利亚武器化研究工作正在进行中。' +
+                '近日，一支位于北非的GDI突击队突袭了一处Nod研究设施，那里原本被认为是化学武器工厂，然而，突击队意外地发现，这是一个先进的Nod泰伯利亚武器科研项目。' +
+                '随后，科学部门对设施残骸的评估证实，几项大规模的泰伯利亚武器化研究工作正在进行中。' +
                 '我军情报员关注的焦点是，关于Nod在创造可产生空前破坏力的液态泰伯利亚设备这方面取得重大进展的证据。',
                 '液体形态是泰伯利亚的一种相对较新的存在形式，其性质鲜为我们所知。' +
                 'Nod兄弟会对液态泰伯利亚的科研工作大概比我们的科学部门提前了5~10年。',
-                '也有迹象表明，Nod正在研发一种更常规的机载泰伯利亚炸药，和一种通过亚临界反应引爆泰伯利亚晶体矿床的催化剂。',
-                '结合过去的Nod科研工作相关情报（大多是零星和重复的）进行综合分析表明，北非的Nod实验室只不过是几个参与泰伯利亚武器化工作的研究设施之一。',
+                '也有迹象表明，Nod正在研发一种更加常规的机载泰伯利亚炸药，和一种通过亚临界反应引爆泰伯利亚晶体矿床的催化剂。',
+                '结合过去的Nod科研工作相关情报（大多是零星和重复的）分析表明，北非的Nod实验室只不过是几个参与泰伯利亚武器化工作的研究设施之一。',
             ],
             original: [
                 'An advanced Nod Tiberium weapon research program was recently uncovered when a GDI strike team in North Africa stormed a Nod facility originally thought to be a chemical weapons factory.',
@@ -108,7 +108,7 @@ const inops = [
                 'There were also indications that Nod is working on a more conventional airborne Tiberium explosive and a catalyst for detonating existing Tiberium crystal deposits in a sub-critical reaction.',
                 'Analysis of past Nod R&D efforts (which tend to be redundant and decentralized in nature) suggests the Nod lab in North Africa was only one of several facilities participating in the Tiberium weaponization efforts.',
             ],
-            tr_source: '【Nod兄弟会将新形态泰伯利亚武器化】',
+            tr_source: 'Nod兄弟会将新形态泰伯利亚武器化',
             or_source: 'Nod Weaponizing New Form of Tiberium',
             pic_src: require('../../assets/gdi_pictures/Tiberium_Liquid.png'),
         },
@@ -120,10 +120,10 @@ const inops = [
             title: 'Nod兄弟会：空军 Nod Aircraft',
             translation: [
                 '自第二次泰伯利亚战争以来，Nod兄弟会的空军有了长足的发展，飞行器设计水准持续进步。',
-                'Nod正在部署垂直起降式的“毒液”侦察机，蝙蝠翼型“眩晕”隐形轰炸机，能运送兵员和军械的大型运输机，以及“末日审判”高空远程轰炸机。',
+                'Nod正在部署垂直起降式的“毒液”侦察机，蝙蝠翼型“眩晕”隐形轰炸机，能运送兵员和军械的大型运输空艇，以及“末日审判”高空远程轰炸机。',
                 '毒液仅配备了轻型武器和装甲，但是可以对地面和空中各种各样的目标发动攻击————它们甚至可以在空战中压制我军的奥卡攻击机。',
-                '眩晕轰炸机可以避开大多数GDI探测设备的侦测，只有在向目标战车和建筑倾泻大威力炸弹时才会显形。',
-                'Nod运输机对应我军的V-35 “公牛”运输机，是一种能够接载和运输各种各样的兵员和军械的垂直起降式飞行器。',
+                '眩晕轰炸机可以避开大多数GDI探测设备的侦测，只有在向目标战车和建筑倾泻威力巨大的炸弹时才会显形。',
+                'Nod运输空艇对应着我军的V-35 “公牛”运输机，是一种能够运载各种各样的兵员和装备的垂直起降式飞行器。',
                 '“末日审判”轰炸机在战场上难得一见，一旦现身对我们来说就意味着大事不妙。' +
                 '“末日审判”被用于运送集束地雷和一些堪称是奇思妙想的空对地武器。',
             ],
@@ -136,7 +136,7 @@ const inops = [
                 'Finally, the Armageddon is seen infrequently but when it appears on the battlefield, it is usually bringing bad news.',
                 'Nod Armageddon aircraft are used to deliver cluster mines and a number of exotic air-to-ground weapons.',
             ],
-            tr_source: '【战地指南-情报员：第三次泰伯利亚战争中的Nod空军】',
+            tr_source: '战地指南-情报员：第三次泰伯利亚战争中的Nod空军',
             or_source: 'InOps Field Guide to Nod Aircraft in TW3 Theatres of War',
             pic_src: require('../../assets/gdi_pictures/Venom.jpg'),
         },
@@ -151,7 +151,7 @@ const inops = [
                 '新式喷火坦克的装甲更加厚重，炮塔瞄准性能有所提升，并且使用了双重火焰喷射器，可以在不重新装填燃料的情况下保持更长时间的输出。' +
                 '它取代了第二次泰伯利亚战争中Nod使用的老式”恶魔之舌“坦克。',
                 '对于所有种类的步兵来说，喷火坦克都象征着死亡与毁灭，而且它能够以恐怖的效率清扫建筑物中的驻军。',
-                '情报员建议战地指挥官使用配备反装甲火炮或火箭发射器的装甲车或战机驱逐和消灭喷火坦克。' +
+                '情报部门建议战地指挥官使用配备反装甲火炮或火箭发射器的装甲车或战机驱逐和消灭喷火坦克。' +
                 '装甲车的封闭式乘员舱还可以在火焰喷射器制造的熊熊大火中保护车内人员。',
             ],
             original: [
@@ -162,7 +162,7 @@ const inops = [
                 'InOps advises field commanders to engage Flame Tanks with armored vehicles or aircraft firing cannons or rockets.',
                 'The enclosed crew compartments in armored vehicles will also protect against the inferno generated by the flame throwers.',
             ],
-            tr_source: '【Nod新型恐怖兵器服役】',
+            tr_source: 'Nod新型恐怖兵器服役',
             or_source: 'Nod Deploys New Tool of Terror',
             pic_src: require('../../assets/gdi_pictures/New_Flame_Tank.jpg'),
         },
@@ -188,7 +188,7 @@ const inops = [
                 'Commanders are encouraged to provide compensation to the legitimate owners of commandeered Tiberium Spikes in the form of GDI vouchers that can be redeemed in Reykjavik for credits.',
                 'Note that spikes extract at different rates depending on the size and nature of the underlying Tiberium deposits, so the flow of resources may vary from location to location.',
             ],
-            tr_source: '【泰伯利亚采炼柱】',
+            tr_source: '泰伯利亚采炼柱',
             or_source: 'Tiberium Spikes',
             pic_src: require('../../assets/gdi_pictures/Tiberium_Spike.png'),
         },
@@ -212,7 +212,7 @@ const inops = [
                 'After years with little Nod activity, the centers were mostly abandoned and are now being used opportunistically by GDI and Nod forces.',
                 'Deploy a combat engineer into the EMP Control Center to capture it and use it against enemy forces.',
             ],
-            tr_source: '【电磁脉冲控制中心】',
+            tr_source: '电磁脉冲控制中心',
             or_source: 'Electromagnetic Pulse Control Centre',
             pic_src: require('../../assets/gdi_pictures/Empcontrol.jpg'),
         },
@@ -221,25 +221,21 @@ const inops = [
         path: 'cairo_nuclear',
         component: Intelligence,
         props: {
-            title: '开罗的核弹发射井 Cairo Nuclear Launch Facility',
+            title: '开罗：核弹发射井 Cairo Nuclear Launch Facility',
             translation: [
-                '《费城事件的罪魁祸首：Nod兄弟会在开罗的核弹发射井》',
-                '* * *',
                 '我军情报员证实，摧毁费城空间站的导弹来源于一座与开罗的Nod核弹发射设施相连通的地下发射井。',
                 '在费城事件发生之前，我军的卫星监视系统很难侦测到这一设施，因为该设施的大部分结构深埋于地下或被精心掩蔽。' +
                 '第三次泰伯利亚战争拉开帷幕后，Nod拆除了发射设施周围的隐蔽系统，并将设施的其它部分转移到地上，以便于执行发射操作。',
                 '制造费城事件的地下发射井目前处于休眠状态，而Nod现阶段的发射操作转移到了发射周期比前者短得多的中央升降台。',
             ],
             original: [
-                'Strike on Philadelphia originated at Nod\'s Cairo Nuclear Launch Facility',
-                '* * *',
                 'InOps has confirmed that the missile used to destroy the Philadelphia was launched from an underground silo connected to Nod\'s Nuclear Launch Facility in Cairo.',
                 'Detection of this facility by sat-surveillance prior to the Philadelphia incident was difficult because most of the structures were buried underground or disguised.',
                 'Since the start of TW3, Nod has removed the masking structures around their buildings and brought other elements of the facility above ground to facilitate launch operations.',
                 'The underground silo that launched the Philadelphia strike is now inactive, with Nod\'s launch operations transferred to a central raised platform with a much lower cycle time between missile launches.',
             ],
-            tr_source: '【情报员速递】',
-            or_source: 'InOps FLASH Report',
+            tr_source: '情报员速递<br/><br/>《费城事件的罪魁祸首：Nod兄弟会在开罗的核弹发射井》',
+            or_source: 'InOps FLASH Report<br/><br/>Strike on Philadelphia originated at Nod\'s Cairo Nuclear Launch Facility',
             pic_src: require('../../assets/gdi_pictures/Cairo_Launch_Facility.png'),
         },
     },
@@ -260,7 +256,7 @@ const inops = [
                 'The reason for the centralization of Nod\'s nukes is not known, although speculation ranges from paranoia (Kane afraid that his commanders might rebel and use nukes on Kane loyalists) to preparation for some unknown operational contingency or a gain in efficiency of operations.',
                 'Whatever the reason, we do know one thing for sure: Take out the Cairo facility and we deprive Nod of its nuclear capability.',
             ],
-            tr_source: '【情报员速递】',
+            tr_source: '情报员速递',
             or_source: 'InOps FLASH Report',
             pic_src: require('../../assets/gdi_pictures/Nod_Nuclear_Missile.png'),
         },
@@ -271,10 +267,6 @@ const inops = [
         props: {
             title: '电力管理 Power Management',
             translation: [
-                '《应急工程报告》',
-                '作者：S.鲍文 准尉',
-                '地点：克罗地亚，GDI前沿作战基地 "Echo-2"',
-                '* * *',
                 'S.鲍文：',
                 '发电厂宕机了，我们的基地电网也受到了损坏————我们没有足够的电力来维持所有设备同时运转。',
                 '让你的防御工事保持供电的唯一途径是暂时关停当前不需要工作的建筑。' +
@@ -284,10 +276,6 @@ const inops = [
                 '在战火中调控电力的艺术是在这里生存下来的关键。',
             ],
             original: [
-                'Emergency Engineering Report',
-                'Warrant Officer S.Bowen',
-                'GDI Forward Operation Base "Echo-2" Croatia',
-                '* * *',
                 'SBowenWrenchMonkey: ',
                 'Power Plants are down and our base grid is compromised - there just isn\'t enough juice to keep everything running at the same time.',
                 'The only way you\'re going to keep those defenses online is to power down anything you\'re not using.',
@@ -296,8 +284,8 @@ const inops = [
                 'You may also need to shut down defenses that aren\'t active to re-route power to guns and turrets that are under immediate threat.',
                 'Juggling power under fire is the key to survival here.',
             ],
-            tr_source: '【您收到一条短讯】',
-            or_source: '<<Incoming Text Message>>',
+            tr_source: '<<您收到一条短讯>><br/><br/>《应急工程报告》<br/>作者：S.鲍文 准尉<br/>地点：克罗地亚，GDI前沿作战基地 "Echo-2"',
+            or_source: '<< Incoming Text Message >><br/><br/>Emergency Engineering Report<br/>Warrant Officer S.Bowen<br/>GDI Forward Operation Base "Echo-2" Croatia',
             pic_src: require('../../assets/gdi_pictures/GDI_Power_Plant.png'),
         },
     },
@@ -310,8 +298,8 @@ const inops = [
                 '自戈达德航天中心遭受袭击以来，GDI的轨道离子炮作战平台始终处于离线状态。' +
                 '所幸目前修缮工作已圆满完成，离子炮重新恢复运行。',
                 '然而，目前我们无法对某些目标实施离子炮打击，因为Nod兄弟会部署了一种新的反制手段：离子炮干扰器阵列。' +
-                '它们被Nod摆放在许多要地。',
-                '所有的战地指挥官都应该时刻意识到离子炮干扰技术的存在，并且密切关注干扰器阵列。' +
+                'Nod在许多要地建立了干扰器阵列。',
+                '所有的战地指挥官都应该时刻意识到离子炮干扰技术的存在，并且对干扰器阵列给予高度重视。' +
                 '在召唤离子炮打击之前，必须先使用常规武器清除这些干扰器。',
             ],
             original: [
@@ -322,9 +310,33 @@ const inops = [
                 'All field commanders should be aware of the existence of Ion Cannon disruption technology and be on the lookout for the disrupter array structures.',
                 'Take out the disrupters with conventional weapons before you call in an Ion Cannon strike.',
             ],
-            tr_source: '【Nod离子炮干扰技术投入使用】',
+            tr_source: 'Nod离子炮干扰技术投入应用',
             or_source: 'Nod deploying Ion Cannon Disruption technology',
             pic_src: require('../../assets/gdi_pictures/Third_ion_cannon.jpg'),
+        },
+    },
+    {
+        path: 'nod_avatar',
+        component: Intelligence,
+        props: {
+            title: 'Nod兄弟会：圣灵步行机甲 Nod Avatar Walker',
+            translation: [
+                '在机械化战斗步行机甲的军备竞赛中，Nod令GDI难以望其项背——许多令GDI工程师束手无策的难题都被Nod攻克了。' +
+                '据推测，Nod窃取了GDI早期的步行机甲技术，随后他们运用其它领域的研究成果加速了新式机甲原型的研发。' +
+                '无论Nod的技术源自何方，他们都进行了连续多年马不停蹄的研究与开发——现如今Nod拥有了一款极其先进的双足步行机甲，可以驾轻就熟地运用多种武器系统。',
+                '圣灵步行机甲是一种能力拔群的全地形武器平台，拥有重型装甲和强力激光武器。' +
+                '它还可以装备火焰喷射器、粒子光束炮、隐形探测器和隐形产生器。',
+            ],
+            original: [
+                'Nod has rocketed ahead of GDI in the race to build mechanized combat walkers - solving many of the problems that had GDI engineers scratching their heads. ' +
+                'There is speculation that Nod stole the original walker technology from GDI, then took advantage of research in other areas to accelerate the development of new prototypes. ' +
+                'Regardless of the origin of Nod\'s technology, they have invested years of research and development at a ruthlessly fast pace - and now Nod has finally fielded a highly advanced bipedal walker with the adaptive ability to use multiple weapon systems. ',
+                'The Avatar Walker is a very capable all-terrain weapons platform, heavily armored and equipped with a powerful laser. ' +
+                'It can also be outfitted with flamethrowers, particle beam cannons, stealth detectors, and stealth generators.',
+            ],
+            tr_source: '强力，坚韧，卓越，震撼：Nod圣灵步行机甲',
+            or_source: 'Powerful, resilient, effective, and frightening: The Nod Avatar Walker',
+            pic_src: require('../../assets/gdi_pictures/AvatarWarmech.jpg'),
         },
     },
     {
@@ -333,9 +345,6 @@ const inops = [
         props: {
             title: '声波武器与外星侵略者<br/> Sonic Weapons and the Invaders',
             translation: [
-                '《声波武器对抗入侵者的奇效》',
-                '撰稿人：第21装甲师 军医 伊琳娜-施瓦茨贝格博士',
-                '* * *',
                 '饱受入侵者蹂躏的慕尼黑仅剩断壁残垣，满目灰烬与碎石，尸骸枕藉，生机难觅，不忍赘述。' +
                 '尽管如此，当我和我的团队秘密穿过城市郊区的废墟搜寻幸存者时，我们偶然取得一些或许可以成为希望火种的发现。',
                 '当我们在夜色保护下穿越这片废土时，我们意外地遇到了GDI第76机械化步兵师一个排的余部，很显然，他们隶属于我军后卫部队，他们成功的行动让一些在某种程度上能够决定战争前景的重要人物得以逃生。' +
@@ -343,7 +352,7 @@ const inops = [
                 '--------------------',
                 '以下文字引自我记录在记事本上的一段通讯内容：',
                 '“我们马不停蹄地开火，但那些如同金属怪物一般的家伙无穷无尽地向我们发起冲锋，在它们同伴的尸体上匍匐前进，对那些尸体视若无睹。' +
-                '终于，那些狗娘养的东西还是把我们逼退到墙边，就在我觉得我们已经在劫难逃的时候，一个脑子像鬼一样好使的工兵灵光一现，他成功地把慕尼黑老旧的声波塔防御网络重新激活了，只听砰的一声巨响，那些该死的发射塔开始像狂暴的器官兽一样把那些混蛋侵略者撕成碎片。' +
+                '终于，那些狗娘养的东西还是把我们逼退到墙边，就在我觉得我们已经在劫难逃的时候，一个脑子鬼精的工兵灵光一现，他成功地把慕尼黑老旧的声波塔防御网络重新激活了，只听砰的一声巨响，那些该死的发射塔开始像狂暴的器官兽一样把那些混蛋侵略者撕成碎片。' +
                 '那个画面可真是美不胜收......”',
                 '阿诺德.P.柯丁顿上士，第76机械化步兵师“查理连”第3排',
                 '--------------------',
@@ -353,9 +362,6 @@ const inops = [
                 '不管怎么说，前途依然光明。',
             ],
             original: [
-                'Effects of sonic weapons on the Invaders',
-                'Dispatch from Dr.Elian Schwartzberg, Battlefield Medic, 21st Armored Division',
-                '* * *',
                 'Needless to say, there is very little in the way of hope to be found in the ash covered, body strewn rubble of post-invasion Munich.',
                 'Even so, as my team covertly made its way through the outskirts of that ruined city, searching for survivors, we stumbled across something that might just be that source of hope.',
                 'Crossing the wastelands under guard of night, we encountered the surviving members of a GDI combat platoon from the 76th Mechanized, apparently flush from a successful rearguard action that enabled the escape of some VIPs that are somehow key to the war effort.',
@@ -370,8 +376,8 @@ const inops = [
                 'For now we can certainly make use of the what - Sonics hurt the aliens. Hurt them bad.',
                 'We may stand a chance after all.',
             ],
-            tr_source: '【情报员速递】',
-            or_source: 'InOps FLASH Report',
+            tr_source: '情报员速递<br/><br/>《声波武器对抗入侵者的奇效》<br/>撰稿人：第21装甲师，军医，伊琳娜-施瓦茨贝格博士',
+            or_source: 'InOps FLASH Report<br/><br/>Effects of sonic weapons on the Invaders<br/>Dispatch from Dr.Elian Schwartzberg, Battlefield Medic, 21st Armored Division',
             pic_src: require('../../assets/gdi_pictures/Shock_Trooper.png'),
         },
     },
@@ -381,28 +387,20 @@ const inops = [
         props: {
             title: '外星人：起源及其与塔西佗的联系<br/> Alien Origins, Connections to the Tacitus',
             translation: [
-                '研究与发展部门',
-                '收件人：全体战地指挥官',
-                '外星人起源 - 与塔西佗的联系',
-                '* * *',
                 '自外星人展开入侵的那一刻起，GDI科研团队就开始竭尽全力去收集所有由外星人发送的数据和有关外星人的实物证据。' +
-                '对外星人所传输数据的分析表明，我们从凯恩手中夺回的塔西佗与外星人之间存在着某种联系。',
-                '侵略部队所传输的数据与塔西佗中的数据结构似乎有着类似的组成方式。' +
+                '对外星人通讯的分析表明，我们从凯恩手中夺回的塔西佗与外星人之间存在着某种联系。',
+                '侵略部队的通讯数据与塔西佗中储存的数据似乎有着类似的结构和排列方式。' +
                 '这一点让我们推断，入侵者正是思金人，或者是其中的某个派系。' +
                 '然而经过详尽的对比，显而易见的是，侵略部队与塔西佗中记录的生命源在语言习惯和外形等方面存在巨大的鸿沟。' +
                 '也许它们之间有着某种遥远的联系，抑或是它们的文化之间存在一些古老的交流？',
-                '我们使用目前最先进的译码计算机破解的一条讯息表明，外星人正在谈论它们曾经遭遇的另外一个外星种族。' +
-                '我们无法翻译其它外星种族使用的词汇，但我们的编码计算机返回了一些零星的词语，比如“兄弟”、“升天”、“敌人”、“思金人”等等。' +
-                '这使得我们对这些入侵者本质的认知产生了一些障碍，因为它们与目前我们所知的思金人有着许多共同点。' +
+                '我们使用目前最先进的译码计算机破解的一条通讯内容表明，外星人正在谈论它们曾经遭遇的另外一个外星种族。' +
+                '我们无法将它们用于指代另一个外星种族的单词恰当地翻译出来，但我们的编码计算机返回了一些零星的词语，比如“兄弟”、“升天”、“敌人”、“思金人”等等。' +
+                '这使得我们对这些入侵者本质的认知产生了一些障碍，毕竟它们与目前我们所知的思金人有着许多共同点。' +
                 '它们似乎不太可能属于那个把塔西佗带到地球的外星种族，但它们之间存在的联系却又是毋庸置疑的。',
                 '如若证据确凿，那么塔西佗就将成为我们最具价值的军事资产。' +
                 '我们必须设法解开它的秘密。',
             ],
             original: [
-                'R&D Division',
-                'Attn: Battle Commanders',
-                'Alien Origins - Connections to the Tacitus',
-                '* * *',
                 'GDI science teams have been gathering every possible bit of transmitted data and physical evidence about the aliens since the moment of invasion.',
                 'Data analysis of alien transmissions has indicated some connection between the Tacitus recovered from Kane and the invaders.',
                 'The transmissions recorded from the invasion force seem to be patterned in a similar way to the data structure in the Tacitus.',
@@ -416,11 +414,80 @@ const inops = [
                 'If this is true, we should consider the Tacitus our most valuable military asset.',
                 'We must somehow find a way to unlock its secrets. ',
             ],
-            tr_source: '【对入侵者起源的初步调查结果】',
+            tr_source: '对入侵者起源的初步调查结果<br/><br/>研究与发展部门<br/>收件人：全体战地指挥官<br/>外星人起源 - 与塔西佗的联系',
             tr_remark: 'GDI情报员速递 - 来自 外星生命研究所主任 A.巴斯博士',
-            or_source: 'Results of initial investigation into the origins of the invaders',
+            or_source: 'Results of initial investigation into the origins of the invaders<br/><br/>R&D Division<br/>Attn: Battle Commanders<br/>Alien Origins - Connections to the Tacitus',
             or_remark: 'GDI InOPS FLASH Report - DR.A.Bass, PHD, Director of Extraterrestrial Research',
             pic_src: require('../../assets/gdi_pictures/Soldier_vs_Scrin.png'),
+        },
+    },
+    {
+        path: 'mastermind',
+        component: Intelligence,
+        props: {
+            title: '外星人：摄魂师 Alien Mastermind',
+            translation: [
+                '我们一度以为在裂谷后方进行发展会更加安全，但很快，事实证明我们错了。' +
+                '外星摄魂师，敌方的一种精英部队，可以将兵力传送到裂谷的另一边，打乱我们的整个行动。' +
+                '凭借对凝结研究室和摄魂师的巧妙运用，外星人仅派出极小规模的部队，就可以持续对我军施加压力。' +
+                '我们有理由相信，除了远程传送部队以外，摄魂师还拥有更多的能力，但我们并未直接观测到它的其它能力。',
+                '如果战场上出现了摄魂师，那么战地指挥官应该考虑以最快的速度率先将它们消灭。' +
+                '摄魂师使得外星侵略者部队的机动性上了一个台阶，也因此成为了极具攻击价值的目标。' +
+                '摄魂师将我军占据的地形优势化为乌有：事实上，它们的存在使得没有任何一个地方是安全的。',
+            ],
+            original: [
+                'Just when we thought that setting up behind the chasm would make us safer, we were proven wrong. ' +
+                'The Alien Mastermind, an enemy commando of sorts, was able to teleport forces across the gap and jeopardize our entire operation. ' +
+                'The aliens were able to keep the pressure on with a minimal number of units and crafty use of their Stasis Chamber and Mastermind. ' +
+                'We believe the Mastermind has more powers than just teleportation, but did not observe any additional capabilities directly.',
+                'If Masterminds are deployed to the battlefield, field commanders should make it a priority to eliminate them ASAP. ' +
+                'The amount of mobility the Masterminds afford the alien Invaders makes them a very high value target. ' +
+                'Alien Masterminds eliminate the advantage of terrain: they virtually guarantee that no place is safe.',
+            ],
+            tr_source: 'GDI为新的入侵者军事单位命名：摄魂师',
+            tr_remark: '作战报告——E.H.贾维斯军士长，第一远征军',
+            or_source: 'New Invader military unit given GDI designation: Mastermind',
+            or_remark: 'Combat Report - Sergeant Major E.H. Jarvis, First Expeditionary Force',
+            pic_src: require('../../assets/gdi_pictures/Mastermind.png'),
+        },
+    },
+    {
+        path: 'rift_generator',
+        component: Intelligence,
+        props: {
+            title: '外星人：裂缝产生器 Alien Rift Generator',
+            translation: [
+                '与裂缝产生器相比，我们的离子炮似乎变成了彻头彻尾的原始科技产品。' +
+                '它的功能似乎是这样：首先在目标点打开一个入口，形成一个场，然后将场中捕获的所有物质一并喷射到深空中。',
+                '我们的一些最为坚固的建筑可以抵御这种攻击，但是裂缝产生器具有的破坏力仍然足以与GDI离子炮和Nod核弹平起平坐。',
+            ],
+            original: [
+                'The Rift Generator makes the science behind our own Ion Cannon look downright primitive. ' +
+                'It appears to function by opening a portal at the flash point and ejecting anything that\'s caught in the resulting field into deep space. ',
+                'Some of our more robust structures have been able to hold against such an attack, but the Rift Generator\'s destructive capabilities are on par with the GDI Ion Cannon and Nod Nuclear Missiles.',
+            ],
+            tr_source: '关于裂缝产生器的最新情报',
+            tr_remark: '戈登-马卢博士，情报部门',
+            or_source: 'Rift Generator Update',
+            or_remark: 'Dr. Gordon Malou, InOps',
+            pic_src: require('../../assets/gdi_pictures/Rift_Generator.png'),
+        },
+    },
+    {
+        path: '',
+        component: Intelligence,
+        props: {
+            title: '',
+            translation: [
+                '',
+            ],
+            original: [
+                '',
+            ],
+            tr_source: '',
+            tr_remark: '',
+            or_source: '',
+            or_remark: '',
         },
     },
 ];

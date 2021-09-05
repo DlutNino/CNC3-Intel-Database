@@ -3,12 +3,12 @@
     <h3 class="intelligence_title" style="text-align: center;" v-html="title"></h3>
     <el-tabs v-model="activeName" @tab-click="handleClick">
       <el-tab-pane label="翻译 by Nino" name="first" >
-        <h4>{{tr_source}}</h4>
+        <h4 v-html="tr_source"></h4>
         <p class="tab_text" v-for="para in translation" :key="para.id" style="text-indent:2em;">{{para}}</p>
         <h4>{{tr_remark}}</h4>
       </el-tab-pane>
       <el-tab-pane label="原文" name="second">
-        <h4>{{or_source}}</h4>
+        <h4 v-html="or_source"></h4>
         <p class="tab_text" v-for="para in original" :key="para.id">{{para}}</p>
         <h4>{{or_remark}}</h4>
       </el-tab-pane>

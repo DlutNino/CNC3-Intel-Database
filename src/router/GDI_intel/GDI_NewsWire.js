@@ -18,8 +18,9 @@ const news_wire = [
                 'Cortez also claimed to have refused a GDI invitation to attend the detonation ceremony, citing his opposition to the current leadership\'s controversial Tiberium containment policy and "weak kneed" approach to the Brotherhood of Nod.',
                 'Rumors that this particular bunker displayed evidence of human or humanoid life forms in suspension capsules were quickly dismissed by GDI spokesperson Arlene Shepherd...',
             ],
-            tr_source: '【节选自 2043年5月28日 INN全息简报】',
+            tr_source: '节选自 2043年5月28日 INN全息简报',
             or_source: 'Excerpt from INN Holobrief, May 28th, 2043',
+            pic_src: require('../../assets/gdi_pictures/IDB_GDI.png'),
         },
     },
     {
@@ -28,12 +29,12 @@ const news_wire = [
         props: {
             title: '猛犸 MkⅡ步行机甲退役<br/> Discontinuation of the Mammoth MkⅡ Walker',
             translation: [
-                '对许多人而言，今天是一个悲伤的日子，因为在今天，最后一台现役的猛犸MkⅡ步行机甲叮当作响地蹒跚走出GDI位于圣佩德罗的战争工厂，永远地走入并封存于历史之中。' +
+                '对许多人而言，今天是一个悲伤的日子，因为在今天，最后一台现役的猛犸MkⅡ步行机甲叮当作响地蹒跚走出GDI位于圣佩德罗的战争工厂，永远地封存于历史之中。' +
                 '拥有双联装轨道炮、战场霸主地位和独具一格的方正外形的猛犸MkⅡ，在第二次泰伯利亚战争期间被视为自由的标志性象征。' +
                 '它的退役和废弃招致了许多人的怒火，特别是退役战争英雄、广受欢迎的保守派专家、“凯恩尚在人间”理论的知名拥护者尼克-“浩劫”-帕克上尉。',
                 '“MkⅡ过去是，现在也仍然是我们在对抗狂热的Nod追随者的战争中最为强悍的兵器。' +
-                '它的废弃不过是GDI官僚主义的吝啬和‘难道我们不能和睦共处吗’这般矫揉造作的自由主义论调的又一个令人唾弃的事迹......GDI又一次愚蠢地正中凯恩下怀。”',
-                '在数英里之外的封锁区已经爆发了抗议活动，工厂对此的情绪与其说是愤怒，倒不如说是逆来顺受。' +
+                '它的废弃一方面是GDI官僚主义的吝啬在作祟，另一方面是‘难道我们不能和睦共处吗’这般矫揉造作的自由主义论调的影响，是这二者的又一个令人唾弃的事迹......GDI又一次愚蠢地正中凯恩下怀。”',
+                '在数英里之外的封锁区已经爆发了抗议活动，而工厂对此的情绪与其说是愤怒，倒不如说是逆来顺受。' +
                 '备受争议的新式四胎全地形MkⅢ方案已经在千里之外的雷克雅未克投入生产，圣佩德罗的许多人对他们的工作和社区的未来充满担心......',
             ],
             original: [
@@ -45,23 +46,24 @@ const news_wire = [
                 'With protests held at containment areas several miles away, the mood at the factory was more resigned than angry. ' +
                 'Production of the controversial new four-tread all-terrain Mark III is scheduled to take place in far off Reykjavik, with many in San Pedro fearing for their jobs and the future of their community...',
             ],
-            tr_source: '【节选自 2039年3月12日 INN全息简报】',
+            tr_source: '节选自 2039年3月12日 INN全息简报',
             or_source: 'Excerpt from INN Holobrief, March 12th, 2039',
+            pic_src: require('../../assets/gdi_pictures/Mammoth_Mk._II.png'),
         },
     },
     {
         path: 'blunder_gdi',
         component: Intelligence,
         props: {
-            title: '几乎令GDI终结的致命失误<br/> The Blunder that Nearly Finished GDI',
+            title: '几乎终结GDI的致命失误<br/> The Blunder that Nearly Finished GDI',
             translation: [
                 '“......我们自认为我们的空间站和离子炮是所有军备中最安全的。' +
                 '正因为此，我们将我们最富有才干的军事人员、最重要的指挥与控制系统以及最强大的武器送入太空。' +
-                '然而我们几乎完全忽视了我方太空军备的一个致命弱点——所有的地面设施全部位于一个防御薄弱的地点，一旦产生故障就无可挽回。' +
-                'Nod在一个最糟糕的时刻抓住了这个弱点，彼时我们的所有政治和军事领导人员全部位于费城空间站。' +
+                '然而我们几乎完全忽视了我方太空军备的一个致命弱点——所有的地面设施全部集中在一处，且防御薄弱，一旦产生故障就无可挽回。' +
+                'Nod在一个最致命的时刻抓住了这个弱点，彼时我们的所有政治和军事领导人员全部位于费城空间站。' +
                 '这是一桩惊天动地的灾难性事件。”',
                 '“更加糟糕的还在后面。' +
-                '经过W3N调查记者的的深入研究，发现我们之所以做出将A-SAT控制系统安置在戈达德航天中心的地面上的决定不过是因为成本问题。' +
+                '经W3N调查记者的深入研究发现，我们之所以做出将A-SAT控制系统安置在地球表面上的戈达德航天中心的决定，不过是因为成本问题。' +
                 '但现在太空通信公司将不得不花费数百亿美元为计算机和工作人员建造一个全新的轨道平台。' +
                 '这既令人怒火中烧，又让人啼笑皆非。' +
                 '太空中的安全一直是一种幻觉——GDI险些死无葬身之地，只是因为太空通信公司想要节省部分资金......”',
@@ -78,7 +80,7 @@ const news_wire = [
                 'This is an outrage. ' +
                 'Security in space was an illusion all along - and GDI was almost wiped out because SpaceCom wanted to save some money..."',
             ],
-            tr_source: '【W3N 《弗兰克60分》发言稿】',
+            tr_source: 'W3N 《弗兰克60分》发言稿',
             or_source: 'W3N Transcript from The Frank Hour',
             pic_src: require('../../assets/gdi_pictures/Philadelphia_1.jpg'),
         },
@@ -87,7 +89,7 @@ const news_wire = [
         path: 'kane_fascination',
         component: Intelligence,
         props: {
-            title: '东欧的魅力令凯恩迷恋不已<br/> Kane\'s Fascination with Eastern Europe',
+            title: '凯恩的东欧情结<br/> Kane\'s Fascination with Eastern Europe',
             translation: [
                 '“......为何凯恩对于重建东欧的计划如此执着？' +
                 '他对萨拉热窝的迷恋究竟源于何物？' +
@@ -98,7 +100,7 @@ const news_wire = [
                 'What is his fascination with Sarajevo? ' +
                 'Eastern Europe has been a focal point for Nod activity for decades and the reasons aren\'t completely clear..."',
             ],
-            tr_source: '【节选自 W3N关于凯恩的专题节目】',
+            tr_source: '节选自 W3N关于凯恩的专题节目',
             or_source: 'Excerpt from W3N Special on Kane',
             pic_src: require('../../assets/gdi_pictures/Eastern_Europe.png'),
         },
@@ -136,10 +138,40 @@ const news_wire = [
                 'NOTE: Upon arrival at an unfamiliar Blue or Yellow Zone, take special care to familiarize yourself with the locations of nearby storm shelters. ' +
                 'They can also be easily identified by the international Ion Storm Shelter symbol.',
             ],
-            tr_source: '【节选自 GDI应急程序报文-避风塘协议】',
+            tr_source: '节选自 GDI应急程序报文-避风塘协议',
             tr_remark: '此致敬意 GDI紧急援助委员会',
             or_source: 'Excerpt from GDI Emergency Procedures Packet - Storm Shelter Protocol',
             or_remark: 'Courtesy GDI Emergency Aid Commission',
+        },
+    },
+    {
+        path: 'alien_tower_destroyed',
+        component: Intelligence,
+        props: {
+            title: '外星巨塔烟消云散！ Alien Tower Destroyed!',
+            translation: [
+                '今天，全人类共同见证了这一刻：位于世界上最根深蒂固的红区的一座高耸入云的外星巨塔，轰然倒塌。' +
+                '这次行动的胜利给我们所有人都带来了希望——GDI完全可以一劳永逸地击退入侵者。' +
+                '然而依然有一个问题尚未得到解决，这座塔究竟是用来做什么的？',
+                '外星人已经在19个红区建造了它们的巨塔。' +
+                '它们的确切用途我们不得而知，但它们的位置都在遍布泰伯利亚的地狱景观——我们称为红区——的心脏地带，这表明，它们与这种水晶般的物质存在着某种联系。' +
+                '而外星人向巨塔撤退的举动更表明，它们的军力部署或行动路线发生了巨大的改变。',
+                '虽然GDI的科学家一直在努力争取对巨塔进行近距离分析的机会，但军方的指挥官坚持认为，当前的第一要务是尽快将这些巨塔摧毁。' +
+                '如果GDI能够在其它的18座巨塔身上复制迅速取胜的罗马行动，那么它们的用途或许就永远无人知晓了。',
+            ],
+            original: [
+                'Today the human race witnessed the destruction of a massive alien tower in one of the world\'s worst Red Zones. ' +
+                'The success of the mission shows all of us that there is hope - and that GDI is in a position to push back the invaders once and for all. ' +
+                'The question remains, however, what was the purpose of the tower?',
+                'Alien towers have been constructed in nineteen Red Zones. ' +
+                'Their precise purpose is unknown but their location in the heart of the Tiberium infested hellscapes we call Red Zones indicates that they are somehow connected to the crystalline substance. ' +
+                'The alien retreat to the towers suggests a serious military realignment or a change of course by the invaders.',
+                'While GDI scientists have been pushing to get a close-up analysis of the towers, military commanders have insisted their quick destruction is the primary concern. ' +
+                'If GDI is able to replicate the quick success of the Rome Tower mission in the other eighteen tower locations, their purpose may never be known.',
+            ],
+            tr_source: '最新头条：GDI成功荡平了罗马的外星巨塔',
+            or_source: 'News Update: GDI Successfully Downs Alien Tower in Rome',
+            pic_src: require('../../assets/gdi_pictures/Threshold.png'),
         },
     },
 ];

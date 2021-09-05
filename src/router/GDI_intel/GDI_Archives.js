@@ -7,15 +7,16 @@ const archives = [
         props: {
             title: 'GDI基地关闭 GDI Base Closure',
             translation: [
-                '......截至2043年，GDI已关闭了其在全球60%以上的军事基地，包括部署在北卡罗来纳州、巴西和东欧等地的军力。' +
-                '近期的军事基地削减是由于Nod活动的减少——在凯恩去世之后，兄弟会似乎已经处于四分五裂之中......',
+                '......截至2043年，GDI已关闭了其在全球60%以上的军事基地，包括位于北卡罗来纳州、巴西和东欧等地的基地。' +
+                '近期对于军事基地的削减是由于Nod活动的减少——在凯恩去世之后，兄弟会似乎已经处于四分五裂之中......',
             ],
             original: [
                 '...as of 2043 GDI has closed over 60% of their military bases around the world, including installations in North Carolina, Brazil, and Eastern Europe.' +
                 'The most recent cutbacks are due to a decrease in Nod activity - with Kane dead, the Brotherhood seems to be splintering apart...',
             ],
-            tr_source: '【节选自 2043的一篇新闻报道】',
+            tr_source: '节选自 2043的一篇新闻报道',
             or_source: 'Scrap of News Article from 2043',
+            pic_src: require('../../assets/gdi_pictures/IDB_GDI_monochrome.png'),
         },
     },
     {
@@ -24,7 +25,7 @@ const archives = [
         props: {
             title: '泰伯利亚 Tiberium Primer',
             translation: [
-                '泰伯利亚是一种科学上的奇观，一种超群绝伦的资源，一条引爆战争的导火索，而且远不止于此。' +
+                '泰伯利亚是一种科学上的奇观，一种超群绝伦的资源，一条引爆战争的导火索，而且还远不止于此。' +
                 '它是我们前所未见之物，而它的形态还处于不断变化之中。',
                 '我们几乎可以肯定的是，泰伯利亚是天外来物。' +
                 '这种物质绝不可能是人造的，而且在半个世纪前它首次出现在地球上之前，没有任何证据表明它的存在。' +
@@ -69,9 +70,9 @@ const archives = [
                 'Whenever one of the heavy particles - a muon or tauon - collides with an atomic nucleus, fission occurs, which results in the production of alpha, beta, and gamma radiation as well as other forms of electromagnetic radiation (like infra-red). ' +
                 'During the transmutation process, nuclei that Tiberium has come into contact with may be changed into nuclei with different (usually fewer) numbers of protons or neutrons.',
             ],
-            tr_source: '【泰伯利亚：恩赐还是诅咒？】',
+            tr_source: '泰伯利亚：恩赐还是诅咒？',
             or_source: 'Tiberium: A gift or a curse?',
-            pic_src: require('../../assets/gdi_pictures/Tiberium.jpg'),
+            pic_src: require('../../assets/gdi_pictures/IDB_Tiberium_diagram.png'),
         },
     },
     {
@@ -88,8 +89,8 @@ const archives = [
                 '泰伯利亚引发的气候变化导致了无穷无尽的干旱、洪水和各种恶劣天气（包括摄人心魄的6级飓风、风速高达500英里/时的龙卷风和极度剧烈的雷暴）的循环。' +
                 '毁灭性的离子风暴有时会脱离红区的范围袭入黄区，为边境地区的城镇带来一场浩劫。',
                 '地表上仅有20%左右的陆地还处在相对安宁平和的状态。' +
-                '蓝区遭受泰伯利亚侵扰的程度最小，而且相对而言远离了硝烟。' +
-                '蓝区民众的生活相对舒适，他们居住在坐落于层峦叠翠的山谷中或是风光宜人的农田中的高科技未来城市内。',
+                '蓝区遭受泰伯利亚侵扰的程度最小，而且相对而言远离硝烟。' +
+                '蓝区民众的生活相对舒适，他们居住在高科技未来城市中，这些城市坐落于层峦叠翠的山谷内，或是风光宜人的农田里。',
             ],
             original: [
                 'Tiberium infestation has rendered 30% of the planet totally uninhabitable. ' +
@@ -112,22 +113,22 @@ const archives = [
         props: {
             title: '关于Nod兄弟会 About the Brotherhood of Nod',
             translation: [
-                'GDI对Nod的认知是，一个由名叫凯恩的人格魅力光芒四射的高功能反社会者领导的，痴迷于为有史以来最严重的生态灾难火上浇油的恐怖组织，狼子野心，阴险狡诈，以令人难以理解的方式自我维持着。' +
+                'GDI对Nod的认知是，一个由名叫凯恩的人格魅力光芒四射的高功能反社会者领导的，痴迷于为有史以来最严重的生态灾难火上浇油的恐怖组织，狼子野心，阴险狡诈，以匪夷所思的方式自我维持着。' +
                 '但兄弟会对自己的看法截然不同。' +
-                'Nod成员坚信，他们是正处于向新秩序过渡的阵痛期中的世界的代理人和这场变革的驱动者，是穷苦大众和受压迫者的代表，也是GDI此前不受任何约束的权力的制衡者。',
+                'Nod成员坚信，世界正处于一场向新秩序过渡的变革的阵痛期中，他们是这个世界的代理人和这场变革的驱动者，是穷苦大众和受压迫者的代表，也是GDI此前不受任何约束的权力的制衡者。',
                 'Nod坐拥在全球范围内对抗GDI和发动战争所需的人员、资源和军事力量。' +
                 '然而，Nod兄弟会并非一个主权国家，而是一个奇形怪状的新型混合组织，同时具有宗教运动、跨国公司和民族国家的诸多特征。' +
-                '考虑到现代战争的惊人需求、高昂成本和巨大规模，Nod所具有的能与GDI正面交锋的实力是耸人听闻的。',
+                '考虑到现代战争的恐怖需求、高昂成本和巨大规模，Nod的强大实力是耸人听闻的，完全足以与GDI正面交锋。',
                 'Nod每个月都能从边境地区对生活麻木绝望的民众之中招募数以千计的新成员。' +
                 '在满目萧然的黄区的破败的城市、村镇和前哨站中，Nod化整为零，悄无声息地执行着他们的政治、军事和后勤行动。' +
-                '他们成功地将规模庞大且错综复杂的基础设施隐蔽起来以免GDI发现，在神不知鬼不觉中进行远途转移的艺术已经被Nod军队运用得炉火纯青，即使是使用最新一代探测设备的卫星和无人机也难以寻觅到Nod的行踪。',
+                '他们成功地将规模庞大且错综复杂的基础设施隐蔽起来以免GDI发现，对Nod军队而言，在神不知鬼不觉中进行长途转移已经是轻车熟路，即使是应用了最新一代探测设备的卫星和无人机，也难以寻觅到Nod的行踪。',
                 'Nod的核心组织体系复杂，科技水平先进，但他们同样拥有一支由来自黄区的训练仓促、装备简陋的新兵组成的大规模游击军队。' +
                 'Nod野战军是一个有趣的组合：军事素质和武器装备双双低下的民兵部队，搭配少数装备有最先进的通讯设备和武器系统的训练有素的精英士兵。',
-                'Nod的军事力量从外观到功能都是新奇且具有实验性的，但他们部队的耐久性令人疑虑。' +
+                'Nod的军事力量从外观到功能都无比新奇，许多还具有实验性，但他们部队的耐久性令人疑虑。' +
                 'Nod工兵往往视死如归，通常会以牺牲安全性和防护能力为代价来提升他们的机动性、行进速度和操作便捷性。' +
                 '他们的高端军事设备通过泰伯利亚驱动，运转速度快但又相当脆弱，致命但缺乏稳定性。' +
-                'Nod将火箭、机枪、火焰喷射器、生化毒素武器、激光、核武器等攻击性武器安装在他们的战车上。' +
-                '他们甚至拥有多种基于泰伯利亚开发的武器。',
+                'Nod的战车上安装了许多攻击性的兵器，包括火箭、机枪、火焰喷射器、生化毒素武器、激光、核武器等。' +
+                '他们甚至拥有多种基于泰伯利亚研发的武器。',
             ],
             original: [
                 'GDI views Nod as a dangerous, virulent, and inexplicably self-sustaining terrorist group obsessed with accelerating the worst ecological catastrophe in history, led by a charismatic and brilliant sociopath named Kane. ' +
@@ -147,6 +148,7 @@ const archives = [
                 'Nod offensive weapons deployed on vehicles range from rockets, machine guns, and flame throwers to toxins, lasers, and nuclear weapons. ' +
                 'They also have a number of Tiberium-based weapons.',
             ],
+            pic_src: require('../../assets/gdi_pictures/IDB_Nod.png'),
         },
     },
     {
@@ -155,14 +157,14 @@ const archives = [
         props: {
             title: '全球防御组织 The Global Defense Initiative',
             translation: [
-                '全球防御组织最初是在联合国的保护伞下由发达国家组成的秘密军事组织。' +
-                'GDI的使命是：遏制泰伯利亚蔓延，迫使其逆向扩散，抗击邪恶势力Nod兄弟会。',
-                '随着时间的推移，GDI逐渐获得了完全的独立自主与各方面的最高权力，而成员国的国家身份也逐渐淡化甚至消失。' +
-                '到2047年，这个过程已接近尾声：尽管在规章层面依然存在成员国的概念，但实际上GDI已经演化为一个统一的政治军事超级国家。',
+                '全球防御组织最初是一个由联合国牵头和保护，由发达国家组成的秘密军事组织。' +
+                'GDI的使命是：遏制泰伯利亚蔓延，迫使其自行萎缩，并抗击邪恶势力Nod兄弟会。',
+                '随着时间的推移，GDI逐渐实现了完全的独立自主，在各方面都取得了最高权力，而成员国的主权国家身份也逐渐淡化甚至消失。' +
+                '到2047年，这个过程已接近尾声：尽管在规章层面依然存在成员国的概念，但实际上GDI已经演化为一个统一的，政军一体的超级大国。',
                 'GDI控制着地球上仅剩的尚未遭受严重的泰伯利亚侵袭的地区。' +
                 '这种水晶一般的天外来物正在蚕食着地球的剩余部分，导致了一场环境层面的大灾变，使得30%的陆地完全无法居住，另外50%的陆地也不适宜人类文明的存续和发展。' +
-                'GDI所完全控制的区域被称为“蓝区”，因为在那里泰伯利亚规模极小，而且相对而言远离了硝烟与烽火（相比之下“黄区”生态受损，战火纷飞，而“红区”更是泰伯利亚横行霸道的人间地狱）。',
-                'GDI与Nod之间的冲突此前曾两度升级为全面的世界大战——第一次泰伯利亚战争爆发时，双方其实还都羽翼未丰，而几年之后又爆发了另一场世界范围的火线风暴。',
+                'GDI所完全控制的区域被称为“蓝区”，因为在那里泰伯利亚的规模可控，而且相对而言远离了硝烟与烽火（相比之下“黄区”生态受损，战火纷飞，而“红区”更是泰伯利亚横行霸道的人间地狱）。',
+                'GDI与Nod之间的冲突此前曾两度升级为全面的世界大战——第一次泰伯利亚战争爆发时，双方其实还都羽翼未丰，而几年之后又爆发了另一场遍及全球的火线风暴。',
             ],
             original: [
                 'The Global Defense Initiative began as a secret military alliance of advanced nations under the United Nations umbrella.' +
@@ -174,6 +176,7 @@ const archives = [
                 'GDI\'s home territories are known as "Blue Zones" since they are mostly clear of Tiberium and have been relatively untouched by war (in contrast to the ecologically ravaged and war-torn "Yellow Zones" and the Tiberium infested hellscapes designated as "Red Zones").',
                 'The clash between GDI and Nod has escalated into full world wars twice before - the First Tiberium War (TWI) erupted when both powers were in their formative states and that terrible war was followed by another worldwide firestorm several years later.',
             ],
+            pic_src: require('../../assets/gdi_pictures/IDB_GDI.png'),
         },
     },
     {
@@ -207,7 +210,7 @@ const archives = [
                 'It\'s not cancer in that the mutations seem strangely directed; they don\'t kill you, but your body will begin to transform.' +
                 'The mechanism for this situation is not well understood.',
             ],
-            pic_src: require('../../assets/gdi_pictures/Tiberium_Symbol.png'),
+            pic_src: require('../../assets/gdi_pictures/IDB_Tiberium.png'),
         },
     },
     {
@@ -251,7 +254,7 @@ const archives = [
         path: 'gdi_nuclear',
         component: Intelligence,
         props: {
-            title: 'GDI核武器概述 GDI\'s Nuclear Weapons',
+            title: 'GDI的核武器 GDI\'s Nuclear Weapons',
             translation: [
                 'GDI依然掌握着一座分布于世界各洲关键地点的核武器库（包括位于澳大利亚荒芜的大自流盆地的一个大型核基地，北美黄区防御森严的发射井，以及其它偏远地区的设施）。',
                 'GDI领导人曾在很久之前郑重承诺无论形势如何，绝不在实战中动用核武器，即使在Nod兄弟会拥有其核力量后依然信守这一诺言。' +
@@ -266,6 +269,74 @@ const archives = [
                 'The most difficult test of GDI nuclear policy came in the early days of TW3 right after the strike on the Philadelphia, but even then it\'s questionable how effective nukes would have been in stemming the Nod tide given that Nod\'s forces were highly decentralized and Nod troops were staging operations deep in GDI Blue Zones.',
                 'Some view GDI\'s pledge not to use nukes as a cynical one given that they deployed a new precision weapon of mass destruction - the Ion Cannon - right at the time they made their vow.',
             ],
+        },
+    },
+    {
+        path: 'red_zone_like',
+        component: Intelligence,
+        props: {
+            title: '红区看上去是什么样子？<br/> What is it Like in a Red Zone?',
+            translation: [
+                '如果你穿上一套坚固的防护服，全副武装地站在一片红区的中央，展现在你面前的将会是一幅地狱般的景象。' +
+                '地面是一片支离破碎，贫瘠不毛的岩石荒原，布满了泰伯利亚矿脉，闪烁着邪恶的绿色光芒。' +
+                '远望地平线，只能看到一层层巨大的泰伯利亚结晶，从四周拔地而起，映入眼帘。' +
+                '这些冰山一般的结晶在周围的地面上投射出诡异的祖母绿色的光彩。',
+                '斜着向上看，你面对的是一片阴云密布，四分五裂的天空，摇曳的光线和闪烁的雷电让天空看上去扭曲变形。' +
+                '如果你等待的时间足够长，你会见证一场离子风暴逐渐形成的过程，头顶的闪电越来越肆虐，直到整个环境都被高频率的闪光所照亮。' +
+                '最后，空中聚集的巨大而可怕的能量开始以电弧的形式直击你四周的地面，表现出令人胆寒的破坏力。' +
+                '伴随着这些焰火，一阵旋风呼啸而来，风中夹杂着巨量的有毒物质，冲刷着荒芜的土地，以疯狂的速度卷起地面上的泰伯利亚晶体碎片。',
+                '红区的地表仿佛是外星世界。' +
+                '科学家推测，泰伯利亚实际上是一种外星文明的地形形成手段，它会缓慢地将我们的世界转变成一种适合于来自另一星球的生物生活的环境。' +
+                '到目前为止，还没有形成明确的结论。',
+            ],
+            original: [
+                'If you were to equip yourself with a hardened environment suit and stand in the middle of a Red Zone, you would see a landscape straight out of hell. ' +
+                'The ground is a blasted and barren plateau of rock laced with veins of Tiberium that shine through with a malevolent green radiance. ' +
+                'On the horizon are massive formations of pure Tiberium that have welled up through the surrounding earth. ' +
+                'These frozen crystalline glaciers cast a sickly emerald glow on the surrounding terrain. ',
+                'Tilt your head and you\'ll contemplate a cloudy, tortured sky alive with twisting patterns of shimmering light and flickers of lightning. ' +
+                'If you wait long enough, you\'ll see an Ion Storm begin to form, the lightning overhead intensifying until the entire environment is lit with rapid strobing flashes. ' +
+                'Eventually the vast and terrible energy overhead will begin arcing to the ground around you in a terrifying display of destructive force. ' +
+                'These fireworks are accompanied by a howling toxic whirlwind that scours the deserted ground and drives shards of Tiberium before it at insane speeds.',
+                'Red Zones are like the surface of an alien world. ' +
+                'Scientists have speculated that Tiberium is actually a terraforming agent for an alien civilization, slowly transforming our world into an environment suitable for beings that have evolved on a different planet. ' +
+                'No definitive conclusions have been reached.',
+            ],
+            tr_source: '节选自 《今日世界的国际正字法指南》',
+            tr_remark: '根据2017版GDI反盗版公约，未经授权私自复制此文本内容将受到最严厉的处罚',
+            or_source: 'Excerpt from "International Orthographic\'s Guide to Our World Today"',
+            or_remark: 'Unauthorized reproduction of this text will be met with the harshest possible penalties, under the GDI anti-piracy convention of 2017',
+            pic_src: require('../../assets/gdi_pictures/Red_Zone_Intel.png'),
+        },
+    },
+    {
+        path: 'tiberium_chasms',
+        component: Intelligence,
+        props: {
+            title: '红区地貌：泰伯利亚裂谷<br/> Red Zone Terrain: Tiberium Chasms',
+            translation: [
+                '红区是地球上最为恶劣的作战环境。' +
+                '无处不在的泰伯利亚矿区，有毒的辐射，险峭的地形（包括裂谷和悬崖），恶劣的天气，以及高耸的冰山型泰伯利亚，共同组成了地狱般的景观，也成为了战地指挥官的噩梦。' +
+                '积极的一面是，考虑到我们拥有的资源和军队的机动性，红区的情况并未严重损害我军的战斗力。' +
+                '下列作战技术在红区的作战行动中效果最为显著：',
+                ' - 喷气式跳跃机：我军的突击队员和战区重装兵将GDI的这一技术运用到了极致，可以轻松地跨过广阔的险恶地形。',
+                ' - 呼叫运输机：复杂的地形带来了严峻的挑战，但我们可以通过V-35公牛运输机转移部队。',
+                ' - 扩展地面控制：地面控制站有时可以将建造范围扩展到裂谷的另一侧，提供在裂谷外侧生产作战单位的条件。' +
+                '除此之外，还可以护送勘探者穿过裂谷，从而在前线进行基地建设。',
+            ],
+            original: [
+                'Red Zones are the most hostile operational environments on the planet. ' +
+                'The abundance of Tiberium fields, the toxic radiation, the intimidating terrain (including chasms and cliffs), the terrible weather, and the huge Tiberium glaciers all contribute to make these hellscapes a nightmare for field commanders. ' +
+                'On the bright side, considering our resources and mobility, we have found that Red Zone conditions don\'t completely jeopardize our fighting ability. ' +
+                'The following operational techniques are found to be the most effective in Red Zone combat actions:',
+                ' - Jump Jets: our commando and zone troopers make the best use of GDI technology by simply jumping across the wide swathes of hostile terrain.',
+                ' - Calling For Transport: the ground terrain poses serious challenges that can be circumvented by bringing in a V35 OX to move units around.',
+                ' - Expanding Ground Control: ground control can sometimes expand build radius beyond the length of a chasm, allowing units to be produced on the other side. ' +
+                'In addition, transporting Surveyors across the chasm can allow for base construction on the front lines.',
+            ],
+            tr_source: '节选自 GDI红区部队行动数据库',
+            or_source: 'Excerpt from GDI Red Zone Military Operational Database',
+            pic_src: require('../../assets/gdi_pictures/Tiberium_Chasms.png'),
         },
     },
 ];
